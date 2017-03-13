@@ -41,7 +41,6 @@ server:
 emar:
   log:
     directory: /data/dsp/app/consumerretry/yzg1
-emar:
   bs:
     consumer:
       group:
@@ -61,7 +60,6 @@ server:
 emar:
   log:
     directory: /data/dsp/app/consumerretry/yzg2
-emar:
   bs:
     consumer:
       group:
@@ -81,7 +79,6 @@ server:
 emar:
   log:
     directory: /data/dsp/app/consumerretry/hzg1
-emar:
   bs:
     consumer:
       group:
@@ -101,7 +98,6 @@ server:
 emar:
   log:
     directory: /data/dsp/app/consumerretry/hzg2
-emar:
   bs:
     consumer:
       group:
