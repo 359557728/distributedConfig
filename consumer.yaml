@@ -95,7 +95,7 @@ emar:
 ---
 #亦庄Consumer发往杭州Redis的第二组程序
 spring:
-  profiles: ythg1prd
+  profiles: ythg2prd
 server:
   port: ${port:19933}
 emar:
