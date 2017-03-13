@@ -33,6 +33,46 @@ redis:
     max:
       times: 1
 ---
+#亦庄Consumer发往亦庄Redis的第一组程序
+spring:
+  profiles: ytyg1prd
+server:
+  port: ${port:19930}
+emar:
+  log:
+    directory: /data/dsp/app/consumerretry/yzg1
+emar:
+  bs:
+    consumer:
+      group:
+        name: yz
+      metadata:
+        broker:
+          list: '{cipher}AQBpNzgChpPl/suD6OdSyo6omqecQc+rK3qKrYHH+Wsjmd5LeLyfRs8A0RBZHBb/4QMekgCZdJBYscQxqxmPP2yEYHa6gTpgKKrDNz6So9OfXHVjm9SctgDbdNluYbvHQDIT1zSnt8kjGzH23DyBYuwltIGTqdAFd4mSrnu1b8k2VWxAWAUahME3gE4+iDQs1qakGwu4GMFGQ1p2Q+5235S1I5/JBG8Je0XOso5gsiavlGCDTQIW5Oe46KSq7pOrFI+f06QcKcsZRuTAmNlNdmYS4w0ehAufDHEEEGoUbNQDUJcRupu3kbJ7/l1JBEwaNkJM0Sh6deu3ba9mgC1OqBce+9P5oEiAAEIuliMdIX60cIzFojLLqOp/YYJRpP2Ih48UINzdIVCL/WaPGAtG9K6t0pjKIbMYzwVwAIjahiaeFHTJoSGbXjYSXxNRCYayJLM='
+      redis:
+        info: '{cipher}AQBQ1t0LGLxyuAI4kC5YqSUYe/21AGQu/B1omAU3ZEb700nxGO77vn6tgOlpOC5VY97L2lW2jnqBg4nh+zLLUeWDAcC11mQRcNM4UdQkNdNixYjkJyaIG3fPVPkxamBdREjq8tBfRjRK/KN18mQRkeBwG10aRZxz+WqnTKvJ+c5Gy0DJ4KGjYSiJHyIjEMsj92Wtbxmt8MMr4ykmvqZvCoahaP06KbKetLEXmVacgAN2liM161cL7abMD27LZh9kRzJ1PgqYAJuz7hEVzH23f39ON/GOljmrmD8iTGtbAqWx/GnpUjW8ioDBXEN6ur6c222PmqudZI6GkcJxb8zkvckYHKv7go2KWc1KYkOCO/W9VnMzy6xMfElGlLeOL4MLiJm6s5kuDBmBNkI063AJJ5xIBlztOwmaDdPx+1CWVo0mJCDDnqbsvhvc5QfH/2ahb1PaVVQBZzk59/0b/bw7NGmMKkjO9CsoSbnki2ziA8RfCTyi4eV+ozPfEVmSmYHRpxoh6y8K/drhcUMjofMx8qXpF7+0r0nUIo7ZeS2Vrvpm3T6qrqfAV9Qn6ESIWilipfJ03N/aDzIzqTWgvwVFQFVhL7mcuSCgnxBh8qjX3rksyyn+/Q/VgrJSZawbxJ8Etla1bT9hD9o7a9s6Rx9UcIf841IFdcUS8GZb7E+9NwBZ6T3zgWwjNHWULceVOYXy0Jjl03zEqoOl3UTX/Omo2nD4FkeAUO/ZAp+gjxQ7LBmXVaf1EqBzRnWxMZ8u1nAguYWwa/MXrI3DsQkljPEvOznIEApzXq/irA02pjNiNk5Vc2ZKNRYLa/IqjW+j6FPPlkh/fPVMKnPUvMNTxGc7l3lmFwYBSovn+wJHg5r6kJ8rIpZl5lIv3Fwr0Qz70Zo5siupsxZ5sa5R5+VnmsGEokS0mPBlDs2az2MSGfICe/BnOg=='
+      topic: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180
+---
+#亦庄Consumer发往亦庄Redis的第二组程序
+spring:
+  profiles: ytyg2prd
+server:
+  port: ${port:19931}
+emar:
+  log:
+    directory: /data/dsp/app/consumerretry/yzg2
+emar:
+  bs:
+    consumer:
+      group:
+        name: yz
+      metadata:
+        broker:
+          list: '{cipher}AQBpNzgChpPl/suD6OdSyo6omqecQc+rK3qKrYHH+Wsjmd5LeLyfRs8A0RBZHBb/4QMekgCZdJBYscQxqxmPP2yEYHa6gTpgKKrDNz6So9OfXHVjm9SctgDbdNluYbvHQDIT1zSnt8kjGzH23DyBYuwltIGTqdAFd4mSrnu1b8k2VWxAWAUahME3gE4+iDQs1qakGwu4GMFGQ1p2Q+5235S1I5/JBG8Je0XOso5gsiavlGCDTQIW5Oe46KSq7pOrFI+f06QcKcsZRuTAmNlNdmYS4w0ehAufDHEEEGoUbNQDUJcRupu3kbJ7/l1JBEwaNkJM0Sh6deu3ba9mgC1OqBce+9P5oEiAAEIuliMdIX60cIzFojLLqOp/YYJRpP2Ih48UINzdIVCL/WaPGAtG9K6t0pjKIbMYzwVwAIjahiaeFHTJoSGbXjYSXxNRCYayJLM='
+      redis:
+        info: '{cipher}AQBQ1t0LGLxyuAI4kC5YqSUYe/21AGQu/B1omAU3ZEb700nxGO77vn6tgOlpOC5VY97L2lW2jnqBg4nh+zLLUeWDAcC11mQRcNM4UdQkNdNixYjkJyaIG3fPVPkxamBdREjq8tBfRjRK/KN18mQRkeBwG10aRZxz+WqnTKvJ+c5Gy0DJ4KGjYSiJHyIjEMsj92Wtbxmt8MMr4ykmvqZvCoahaP06KbKetLEXmVacgAN2liM161cL7abMD27LZh9kRzJ1PgqYAJuz7hEVzH23f39ON/GOljmrmD8iTGtbAqWx/GnpUjW8ioDBXEN6ur6c222PmqudZI6GkcJxb8zkvckYHKv7go2KWc1KYkOCO/W9VnMzy6xMfElGlLeOL4MLiJm6s5kuDBmBNkI063AJJ5xIBlztOwmaDdPx+1CWVo0mJCDDnqbsvhvc5QfH/2ahb1PaVVQBZzk59/0b/bw7NGmMKkjO9CsoSbnki2ziA8RfCTyi4eV+ozPfEVmSmYHRpxoh6y8K/drhcUMjofMx8qXpF7+0r0nUIo7ZeS2Vrvpm3T6qrqfAV9Qn6ESIWilipfJ03N/aDzIzqTWgvwVFQFVhL7mcuSCgnxBh8qjX3rksyyn+/Q/VgrJSZawbxJ8Etla1bT9hD9o7a9s6Rx9UcIf841IFdcUS8GZb7E+9NwBZ6T3zgWwjNHWULceVOYXy0Jjl03zEqoOl3UTX/Omo2nD4FkeAUO/ZAp+gjxQ7LBmXVaf1EqBzRnWxMZ8u1nAguYWwa/MXrI3DsQkljPEvOznIEApzXq/irA02pjNiNk5Vc2ZKNRYLa/IqjW+j6FPPlkh/fPVMKnPUvMNTxGc7l3lmFwYBSovn+wJHg5r6kJ8rIpZl5lIv3Fwr0Qz70Zo5siupsxZ5sa5R5+VnmsGEokS0mPBlDs2az2MSGfICe/BnOg=='
+      topic: 5190,5210,5220,5240,5250,5020          
+---
 #亦庄Consumer发往杭州Redis的第一组程序
 spring:
   profiles: ythg1prd
@@ -57,10 +97,10 @@ emar:
 spring:
   profiles: ythg1prd
 server:
-  port: ${port:19932}
+  port: ${port:19933}
 emar:
   log:
-    directory: /data/dsp/app/consumerretry/hzg1
+    directory: /data/dsp/app/consumerretry/hzg2
 emar:
   bs:
     consumer:
@@ -71,4 +111,4 @@ emar:
           list: '{cipher}AQBpNzgChpPl/suD6OdSyo6omqecQc+rK3qKrYHH+Wsjmd5LeLyfRs8A0RBZHBb/4QMekgCZdJBYscQxqxmPP2yEYHa6gTpgKKrDNz6So9OfXHVjm9SctgDbdNluYbvHQDIT1zSnt8kjGzH23DyBYuwltIGTqdAFd4mSrnu1b8k2VWxAWAUahME3gE4+iDQs1qakGwu4GMFGQ1p2Q+5235S1I5/JBG8Je0XOso5gsiavlGCDTQIW5Oe46KSq7pOrFI+f06QcKcsZRuTAmNlNdmYS4w0ehAufDHEEEGoUbNQDUJcRupu3kbJ7/l1JBEwaNkJM0Sh6deu3ba9mgC1OqBce+9P5oEiAAEIuliMdIX60cIzFojLLqOp/YYJRpP2Ih48UINzdIVCL/WaPGAtG9K6t0pjKIbMYzwVwAIjahiaeFHTJoSGbXjYSXxNRCYayJLM='
       redis:
         info: '{cipher}AQAs8L0jxEveOjMBjrzoguQJGM2Z1uWcX3OebLCmvSe3BUfYomaWDhBGQOKeRoYX55kKxtHhtQDbgUjfH95iVB+wJMzTTYbbH/+e971bqlC09r639bDFWYJWrYpVGRmkB5knPI8wA3D98St/DIFLGJc5LV95C5Fsxx8gY0/IwSK71xwTXwfN/JHno2438CN/SVC5abwpTI4YBgbHPrPAvFFAwY/qUgWzF+ra4fGJi0fZ3jBIB8ACOZD+GsaSrxKRPDhYt5a0K/00PRGTnfRn0lkXLGkrjFXuTIIfOVD7HAi17Tk8dBleSodFc7k4lSiQq7ymYwNaCi+fTFap6F3jIScTDN6BQRxf+WNUie3usAKC2c26jeyUaLrscPZwA6jsF4XH5b7Fyeog3/fRey2Dt4k/U7okQ62uukOuO9RAUOPLiFrtZ6uLQEoSorr7/3259PDKe29wZbQ2kcCwl0k51wkGV9JajFqer/cm1PLPCl8+blPVzGdZVL4/frw70rIa6OLqsDMGx8iL6XTEy/qEcaY1v7ZwvsQ6Rb878OacyaCy+bli4NfPGpO46QYQLEUbYwJJkrG2gR4o9giuwkWr8OwvoE3bXmU270BCmuLG3Dni7BWxoKX61AW2zRQDOxxhS8K5xkEiFNgVIocq1UrCyYjnhdbT5pI2iaVEOkVllw4SA5P1/vd7DSLp12cnxgJaKc/P7bHPdFEwp2o83gfdQp+8otmvICdCx1YP3UKvi+nw8M4XgkTec7G7MCf8d82W05iEW+ng9rJEoqfiuuegZaUosuEa9DkZ3aWYRw9I/GljYjb/1TfZ3QJ03YAv5pJfwYM4QjNJpNRV0gtVMnyoorD2qSJi6xsqHOG7gte1vzhiYaCNXTqpq4yVgiK+BrhkeRNy6NHM4LoMQ8Ag15kfxagOft4ZdjMe6RILuXcZi6eljA=='
-      topic: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180
+      topic: 5190,5210,5220,5240,5250,5020   
