@@ -4,6 +4,8 @@ eureka:
         register-with-eureka: false
         serviceUrl:
             defaultZone: http://localhost:8761/eureka/
+    server:
+        enable-self-preservation: false            
 logging:
     level:
         com:
@@ -11,7 +13,4 @@ logging:
                 discovery: 'OFF'
                 eureka: 'OFF'
 server:
-    port: ${PORT:8761}
-eureka:
-    server:
-        enable-self-preservation: false   
+    port: ${PORT:8761} 
