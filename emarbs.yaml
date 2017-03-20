@@ -35,4 +35,4 @@ spring:
             enabled: false
 emar:
     log:
-        directory:upload
+        location:upload
