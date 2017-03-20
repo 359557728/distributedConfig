@@ -33,3 +33,6 @@ spring:
     batch:
         job:
             enabled: false
+emar:
+    log:
+        directory:upload
