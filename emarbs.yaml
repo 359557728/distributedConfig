@@ -34,5 +34,5 @@ spring:
         job:
             enabled: false
 emar:
-    log:
-        location:upload
+    file:
+        directory:upload
