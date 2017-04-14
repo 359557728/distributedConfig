@@ -22,7 +22,7 @@ metadata:
       ms: 10000
 redis:
   connect:
-    timeout: 15000
+    timeout: 6000
   max:
     active: 500
     idle: 350
