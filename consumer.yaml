@@ -36,6 +36,9 @@ redis:
 #亦庄Consumer发往亦庄Redis的第一组程序
 spring:
   profiles: ytyg1prd
+  batch:
+    job:
+      enabled: false
 server:
   port: ${port:19930}
 emar:
