@@ -2,7 +2,7 @@ emar:
   bs:
     consumer:
       resend:
-        cron: 0 */30 * * * ?
+        cron: 0 */5 * * * ?
       redis:
         key: media_mq
   log:
