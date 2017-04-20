@@ -33,6 +33,11 @@ spring:
     batch:
         job:
             enabled: false
+    jpa:
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true            
 emar:
     file:
         directory: upload
