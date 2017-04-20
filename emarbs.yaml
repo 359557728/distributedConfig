@@ -41,3 +41,8 @@ spring:
 emar:
     file:
         directory: upload
+log4j:
+    logger:
+        org:
+            hibernate:
+                type: trace        
