@@ -33,7 +33,7 @@ redis:
     initial:
       interval: 500
     max:
-      times: 1
+      times: 2
 spring:
   batch:
     job:
