@@ -4,8 +4,7 @@ logging:
       emarbox: INFO
     org:
       springframework:
-        web: INFO
-        
+        web: INFO 
 ---
 #广东统计程序
 spring:
