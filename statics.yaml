@@ -11,10 +11,10 @@ spring:
   profiles: gd
   cloud:
     stream:
-       bindings:
-          input:
-            group: statics
-            destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1  
+      bindings:
+        input:
+          group: statics
+          destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1  
       kafka:
         binder:
           brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
