@@ -9,9 +9,6 @@ logging:
 #广东统计程序
 spring:
   profiles: gd
-server:
-  port: ${port:19940}
-spring:
   cloud:
     stream:
       kafka:
@@ -20,5 +17,7 @@ spring:
         bindings:
           input:
             group: statics
-            destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
+            destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1  
+server:
+  port: ${port:19940}
                     
