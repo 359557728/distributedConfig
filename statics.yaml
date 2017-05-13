@@ -1,1 +1,24 @@
-
+logging:
+  level:
+    com:
+      emarbox: INFO
+    org:
+      springframework:
+        web: INFO
+        
+---
+#广东统计程序
+spring:
+  profiles: gd
+server:
+  port: ${port:19940}
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
+        bindings:
+          input:
+            group: statics          
+                    
