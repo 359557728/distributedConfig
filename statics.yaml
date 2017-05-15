@@ -15,6 +15,11 @@ spring:
         input:
           consumer:
             headerMode: raw
+            configuration:
+              key:
+                deserializer: org.apache.kafka.common.serialization.StringDeserializer
+              value:
+                deserializer: org.apache.kafka.common.serialization.StringDeserializer              
           group: statics
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
         output:
@@ -24,12 +29,7 @@ spring:
       kafka:
         binder:
           brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
-          zkNodes: 121.201.104.50:2181,121.201.104.52:2181,121.201.104.53:2181
-          configuration:
-            key:
-              deserializer: org.apache.kafka.common.serialization.StringDeserializer
-            value:
-              deserializer: org.apache.kafka.common.serialization.StringDeserializer          
+          zkNodes: 121.201.104.50:2181,121.201.104.52:2181,121.201.104.53:2181        
 server:
   port: ${port:19940}
                     
