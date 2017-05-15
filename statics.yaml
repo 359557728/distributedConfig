@@ -14,7 +14,14 @@ spring:
       bindings:
         input:
           consumer:
-            headerMode: raw        
+            headerMode: raw
+            configuration:
+              key:
+                deserializer: org.apache.kafka.common.serialization.StringDeserializer.class
+              value:
+                deserializer: org.apache.kafka.common.serialization.StringDeserializer.class
+
+            
           group: statics
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
         output:
