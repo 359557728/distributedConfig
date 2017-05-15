@@ -17,9 +17,9 @@ spring:
             headerMode: raw
             configuration:
               key:
-                deserializer: org.apache.kafka.common.serialization.StringDeserializer
+                deserializer: class org.apache.kafka.common.serialization.StringDeserializer
               value:
-                deserializer: org.apache.kafka.common.serialization.StringDeserializer
+                deserializer: class org.apache.kafka.common.serialization.StringDeserializer
           producer:
             useNativeEncoding: true
           group: statics
