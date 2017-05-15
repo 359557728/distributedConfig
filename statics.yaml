@@ -15,6 +15,7 @@ spring:
         input:
           consumer:
             headerMode: raw
+            useNativeEncoding: true
             configuration:
               key:
                 deserializer: org.apache.kafka.common.serialization.StringDeserializer
