@@ -14,6 +14,7 @@ spring:
       bindings:
         input:
           consumer:
+            headerMode: raw
             configuration:
               key:
                 deserializer: org.apache.kafka.common.serialization.StringDeserializer
