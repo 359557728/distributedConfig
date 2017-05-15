@@ -16,9 +16,9 @@ spring:
           consumer:
             configuration:
               key:
-                deserializer: org.apache.kafka.common.serialization.StringDeserializer.class
+                deserializer: class org.apache.kafka.common.serialization.StringDeserializer
               value:
-                deserializer: org.apache.kafka.common.serialization.StringDeserializer.class 
+                deserializer: class org.apache.kafka.common.serialization.StringDeserializer
           group: statics
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
         output:
