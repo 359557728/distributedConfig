@@ -27,9 +27,9 @@ spring:
           producer:
             configuration:
               key:
-                deserializer: org.apache.kafka.common.serialization.StringDeserializer
+                deserializer: org.apache.kafka.common.serialization.StringSerializer
               value:
-                deserializer: org.apache.kafka.common.serialization.StringDeserializer 
+                deserializer: org.apache.kafka.common.serialization.StringSerializer 
             useNativeEncoding: true
       kafka:
         binder:
