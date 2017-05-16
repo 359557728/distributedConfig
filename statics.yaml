@@ -22,8 +22,10 @@ spring:
                 deserializer: org.apache.kafka.common.serialization.StringDeserializer              
           group: statics
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
+          contentType: text/plain
         output:
           destination: statics
+          contentType: text/plain
           producer:
             configuration:
               key:
