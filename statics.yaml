@@ -25,6 +25,11 @@ spring:
         output:
           destination: statics
           producer:
+            configuration:
+              key:
+                deserializer: org.apache.kafka.common.serialization.StringDeserializer
+              value:
+                deserializer: org.apache.kafka.common.serialization.StringDeserializer 
             useNativeEncoding: true
       kafka:
         binder:
