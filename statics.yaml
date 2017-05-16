@@ -14,25 +14,13 @@ spring:
       bindings:
         input:
           consumer:
-            headerMode: raw
-            configuration:
-              key:
-                deserializer: org.apache.kafka.common.serialization.StringDeserializer
-              value:
-                deserializer: org.apache.kafka.common.serialization.StringDeserializer              
+            headerMode: raw            
           group: statics
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
           contentType: text/plain
         output:
           destination: statics
           contentType: text/plain
-          producer:
-            configuration:
-              key:
-                serializer: org.apache.kafka.common.serialization.StringSerializer
-              value:
-                serializer: org.apache.kafka.common.serialization.StringSerializer 
-            useNativeEncoding: true
       kafka:
         binder:
           brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
