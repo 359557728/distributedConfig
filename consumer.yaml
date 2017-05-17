@@ -5,7 +5,10 @@ emar:
         size: 500
         time: 15
       batch:
-        size: 2200
+        read:
+          size: 2200
+        write:
+          size: 300
       record:
         separator: (*)
       resend:
