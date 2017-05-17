@@ -3,6 +3,7 @@ emar:
     consumer:
       buffer:
         size: 300
+        time: 10
       batch:
         size: 2200
       record:
