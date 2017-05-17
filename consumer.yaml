@@ -1,6 +1,12 @@
 emar:
   bs:
     consumer:
+      buffer:
+        size: 300
+      batch:
+        size: 2200
+      record:
+        separator: (*)
       resend:
         cron: 0 */5 * * * ?
       redis:
