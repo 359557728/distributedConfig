@@ -2,8 +2,8 @@ emar:
   bs:
     consumer:
       buffer:
-        size: 300
-        time: 10
+        size: 1200
+        time: 15
       batch:
         size: 2200
       record:
