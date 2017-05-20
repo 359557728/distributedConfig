@@ -20,6 +20,11 @@ spring:
           contentType: text/plain
         output:
           destination: statics
+          producer:
+            value:
+              serializer: org.apache.kafka.common.serialization.StringSerializer
+            key:
+              serializer: org.apache.kafka.common.serialization.StringSerializer
       kafka:
         binder:
           brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
