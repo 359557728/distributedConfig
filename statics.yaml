@@ -14,10 +14,12 @@ spring:
       bindings:
         input:
           consumer:
-            headerMode: raw            
+            value:
+              deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            key:
+              deserializer: org.apache.kafka.common.serialization.StringDeserializer
           group: statics
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
-          contentType: text/plain
         output:
           destination: statics
           producer:
