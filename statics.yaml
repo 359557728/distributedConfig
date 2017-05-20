@@ -26,6 +26,7 @@ spring:
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
           contentType: application/json
         output:
+          headerMode: raw
           destination: statics
           producer:
             value:
