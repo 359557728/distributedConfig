@@ -1,6 +1,6 @@
 emar:
   bs:
-    consumer:
+    statics:
       buffer:
         size: 800
         time: 10
@@ -35,7 +35,7 @@ spring:
         output:
           producer:
             headerMode: raw
-          destination: statics
+          destination: statics_invalid
           useNativeEncoding: true
       kafka:
         binder:
