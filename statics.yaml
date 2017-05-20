@@ -16,10 +16,10 @@ spring:
           consumer:
             headerMode: raw            
           group: statics
-          destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
+          destination: statics
           contentType: text/plain
         output:
-          destination: statics
+          destination: statics1
       kafka:
         binder:
           brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
