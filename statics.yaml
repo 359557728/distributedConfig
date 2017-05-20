@@ -17,6 +17,7 @@ spring:
             headerMode: raw
           group: statics
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1
+          contentType: text/plain
         output:
           destination: statics
           producer:
