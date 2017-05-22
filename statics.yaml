@@ -2,8 +2,8 @@ emar:
   bs:
     statics:
       buffer:
-        size: 800
-        time: 10
+        size: 100000
+        time: 5
 logging:
   level:
     com:
