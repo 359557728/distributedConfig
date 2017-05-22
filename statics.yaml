@@ -3,7 +3,7 @@ emar:
     statics:
       buffer:
         size: 100000
-        time: 5
+        time: 1
 logging:
   level:
     com:
