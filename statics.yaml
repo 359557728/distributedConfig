@@ -37,6 +37,7 @@ spring:
             headerMode: raw
           destination: statics_invalid
           useNativeEncoding: true
+          contentType: application/json
       kafka:
         binder:
           brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
