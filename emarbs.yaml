@@ -42,7 +42,7 @@ emar:
     file:
         directory: upload
     cross:
-        origin: http://displayer.emarbox.com,
+        origin: http://displayer.emarbox.com,http://localhost
 log4j:
     logger:
         org:
