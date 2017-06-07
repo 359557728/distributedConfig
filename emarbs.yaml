@@ -41,6 +41,8 @@ spring:
 emar:
     file:
         directory: upload
+    cross:
+        origin: http://displayer.emarbox.com,
 log4j:
     logger:
         org:
