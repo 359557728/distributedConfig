@@ -42,7 +42,7 @@ emar:
     file:
         directory: upload
     cross:
-        origin: http://localhost:8080
+        origin: http://dsptest.emarbox.com
 log4j:
     logger:
         org:
