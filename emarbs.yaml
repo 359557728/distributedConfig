@@ -41,7 +41,7 @@ spring:
     hadoop:
         config:
             fs:
-                defaultFS: hdfs://118.26.148.51:50070/user/tongyi/crowdpack_source/
+                defaultFS: hdfs://192.168.6.51:8020/user/tongyi/crowdpack_source
         fsshell:
             enabled: true                
 emar:
