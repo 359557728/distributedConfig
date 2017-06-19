@@ -38,6 +38,12 @@ spring:
             hibernate:
                 format_sql: true
         show-sql: true            
+    hadoop:
+        config:
+            fs:
+                defaultFS: hdfs://hadoopnew/user/tongyi/crowdpack_source/
+        fsshell:
+            enabled: true                
 emar:
     file:
         directory: upload
