@@ -47,7 +47,7 @@ spring:
 emar:
     file:
         people：
-            file: peopack
+            direcoty: peopack
         directory: upload
     cross:
         origin: http://displayer.emarbox.com
