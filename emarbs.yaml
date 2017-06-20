@@ -47,7 +47,7 @@ spring:
 emar:
     file:
         people:
-            direcoty: peopack
+            direcoty: /dmp4/crowdpack/getDmpidNew/data/source
         directory: upload
     cross:
         origin: http://displayer.emarbox.com
