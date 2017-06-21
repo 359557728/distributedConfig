@@ -55,4 +55,7 @@ log4j:
     logger:
         org:
             hibernate:
-                type: trace        
+                type: trace
+multipart:
+    max-request-size: 100MB
+    max-file-size: 100MB
