@@ -62,7 +62,7 @@ multipart:
 ---
 #亦庄Consumer发往亦庄Redis的第一组程序
 spring:
-  profiles: qm
+    profiles: qm
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
         password: '{cipher}AQAoq6Vu8cBYoyJdPoK1/XV3SMeNzH6vGa/xm4Dr0BazbCmyNybliWQkEHR96HkkXjLofID/DrKPXlcf+818k2ydBDBjMXsW39ojze5vY8yQ3xskotwD7UAH3VBLWuRp5iP3fm1LnkhRqb1cNtCt2BP3KNa35rxvJxzh9kPRiN8U9U0QMS1PwYPircnNwJROgTgCYEOQbrNZPJlC5Nm1ldHHlNDaR1EkelJFlRVjL+wHIBHfWNFDJhLv5OcDAR2rIoK/BOIqQeWAgF7ojrnKsXf7ZYHJfXwldoGlAWtLR0k+D1Rx33cik14HZNXLH95hfiZOKMRHecb8jw7e+uTx9HziUkkyThutDnWB3f4dVBdaqPFYRUl8ldZIXEpRmy20ZdM='
