@@ -59,3 +59,14 @@ log4j:
 multipart:
     max-request-size: 100MB
     max-file-size: 100MB
+---
+#亦庄Consumer发往亦庄Redis的第一组程序
+spring:
+  profiles: ytyg1prd
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: '{cipher}AQAoq6Vu8cBYoyJdPoK1/XV3SMeNzH6vGa/xm4Dr0BazbCmyNybliWQkEHR96HkkXjLofID/DrKPXlcf+818k2ydBDBjMXsW39ojze5vY8yQ3xskotwD7UAH3VBLWuRp5iP3fm1LnkhRqb1cNtCt2BP3KNa35rxvJxzh9kPRiN8U9U0QMS1PwYPircnNwJROgTgCYEOQbrNZPJlC5Nm1ldHHlNDaR1EkelJFlRVjL+wHIBHfWNFDJhLv5OcDAR2rIoK/BOIqQeWAgF7ojrnKsXf7ZYHJfXwldoGlAWtLR0k+D1Rx33cik14HZNXLH95hfiZOKMRHecb8jw7e+uTx9HziUkkyThutDnWB3f4dVBdaqPFYRUl8ldZIXEpRmy20ZdM='
+        testWhileIdle: true
+        url: '{cipher}AQA6Um+z2ZtjNYov47Orn76Q+F3UIdjfwbC8NvQwumNZ/f56U2SXjKHN/0S1ugEGxUzBwN4K4DU9uDOA8FHDLtdXhFtVPw3koGAOnNbMmLqkV2sKQLUKRcqZswDza15+4qeCj1WVE5S7WUMVZU1jS4AKguY5gD16b1vsDcAaGmXXGe8uIzAHxuLJfb2gYRQCA8QTHLN59SaDbse7qJxjzhoTPg6ceKKS70W1+JK0ebS8mZTCyZJgRNPOAuralslwfmSvLC9OyriXPewJ2keh1BQ+ItwL7fHDIxfrBIquY9O84IJvP0NNoZWmPtSFMJx/KKDh3iXO4+ckKgDrYTKGXxSdD0sHzwom0im4S+g/dre4Lf+EO6rK5KtB6O2rp/+r0ohfKye24i2w6nXXchfwNnXAnf6Qx1JdHdnM4lyF5PJLdZ13FToXPQCAIyxc09HcGFg='
+        username: '{cipher}AQCx8LwXAgmv7ef+HThwT6SuHr5E6DpPUEPAtcfVrJOvQ0LYRXDNg9BPVVC97kjAWK+4HH1ypGl7iPivTSLLsOmkcGVf4BH17d9qkLGBtk2WKzB6rvqmKSS/HbnE9dzQXUenEQ+rIxJyzrHPZyhHONj+p3fpynNbWpwmYTJEK/Fm2DmLDp/jFV2XGQVA1eYigZxFBUQdsYwmGoe4anqf5IFPbJR7y5yaN9krP66EbkeUyTaykqDXzBbXCYeK8WpxKtAHmk9Qhzkxnvs1//n/37qyrkJNlsRbmS7SUeloJDGYq5NKhYdpNHkbXsOzaOJaErCcancOz+89sjZCxM6K1R1FmexKpQk59eLyBUgTj/4RfynU1DQjU/aYrIRBcVj5G5s='
+        validationQuery: SELECT 1  
