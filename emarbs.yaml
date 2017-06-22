@@ -47,6 +47,8 @@ spring:
 emar:
     file:
         people:
+            reocord:
+                number: 1000
             directory: /dmp4/crowdpack/getDmpidNew/data/source
         directory: upload
     cross:
