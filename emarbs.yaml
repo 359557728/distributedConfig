@@ -50,6 +50,8 @@ emar:
             record:
                 number: 1000
             directory: /dmp4/crowdpack/getDmpidNew/data/source
+            file:
+                size: 100
         directory: upload
     cross:
         origin: http://displayer.emarbox.com
