@@ -65,7 +65,7 @@ log4j:
             hibernate:
                 type: trace
 ---
-#亦庄Consumer发往亦庄Redis的第一组程序
+#qm专用数据库配置
 spring:
     profiles: qm
     datasource:
