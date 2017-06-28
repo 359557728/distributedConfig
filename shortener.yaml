@@ -13,7 +13,6 @@ spring:
         url: '{cipher}AQCuFWBSnzNY9yMkbLABQhJgumO1ENY8m9IpGCaHRdb7+x8bXeGJ1TxIWZ/0XCcagKr51P8m/RCY6DWySWSj4U5ugGVeerA0OrvFxoCshGpaE2gxPsw63+NgbG5Sdjg6ZegrV6134D7uUKqaYynCnsbkwW3LRUs3gKzQkSo21Q0JtiO6aywKgKgGlEbkTpU9Vb7VjqaJfiuoUcn7HPpWG6nFv3byEHm4T/GOxkiZVHqyC1Zcq4znmTxcve9MeaNrqaWE805VzoLkTq2h8gkHAm/N1yzhh8VCHDpWdXjEq5f5tXJc4arKh+F+eqOuEsGeo1prKzzVysb0JC+lPPE1MaEuOTiW7nVk5SsMKmeQRStd1oOnQym1uo2bBMZefGRC085Qwd72ExxFfusShUjWjDammdoD9Qgoi2N5H3aKqznjocFrzfKD3PbRtjww6ojkWPQ='
         username: '{cipher}AQCx8LwXAgmv7ef+HThwT6SuHr5E6DpPUEPAtcfVrJOvQ0LYRXDNg9BPVVC97kjAWK+4HH1ypGl7iPivTSLLsOmkcGVf4BH17d9qkLGBtk2WKzB6rvqmKSS/HbnE9dzQXUenEQ+rIxJyzrHPZyhHONj+p3fpynNbWpwmYTJEK/Fm2DmLDp/jFV2XGQVA1eYigZxFBUQdsYwmGoe4anqf5IFPbJR7y5yaN9krP66EbkeUyTaykqDXzBbXCYeK8WpxKtAHmk9Qhzkxnvs1//n/37qyrkJNlsRbmS7SUeloJDGYq5NKhYdpNHkbXsOzaOJaErCcancOz+89sjZCxM6K1R1FmexKpQk59eLyBUgTj/4RfynU1DQjU/aYrIRBcVj5G5s='
         validationQuery: SELECT 1
-spring:
     redis:
         cluster:
             max-redirects: 100
