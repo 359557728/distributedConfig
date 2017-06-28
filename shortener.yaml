@@ -32,4 +32,4 @@ spring:
         show-sql: true
 emar:
     domain:
-        url: "http://127.0.0.1:19806"
+        url: "http://127.0.0.1:19806/"
