@@ -29,4 +29,7 @@ spring:
         properties:
             hibernate:
                 format_sql: true
-        show-sql: true                
+        show-sql: true
+emar:
+    domain:
+        url: "http://127.0.0.1:19806"
