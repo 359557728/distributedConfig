@@ -18,6 +18,8 @@ spring:
             max-redirects: 100
             yz:
                 nodes: 123.59.18.131:12340,123.59.18.206:12342
+            sh:
+                nodes: 192.168.1.242:12770,192.168.1.243:12770               
         pool:
             max-active: -1
             max-idle: 8
