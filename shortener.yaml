@@ -16,9 +16,9 @@ spring:
     redis:
         cluster:
             max-redirects: 100
-            yz:
+            primary:
                 nodes: 123.59.18.131:12340,123.59.18.206:12342
-            sh:
+            assistant:
                 nodes: 192.168.1.242:12770,192.168.1.243:12770               
         pool:
             max-active: -1
