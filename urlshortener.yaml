@@ -3,20 +3,6 @@ eureka:
     client:
         serviceUrl:
             defaultZone: '{cipher}AQA/NB/V/XGGgN5R7ArjPcgTd5E9s+8vTTXmgDM19T1z/vySVUAZ1VThdBIOJlsfOASmBd78cvJ9K+FoPIHL9r511b3BZQXbp6Q5fZZwOEriqhNzOpyPXL3dVtM3Ou6RbmtkeeXh1tL2bQhU++1p7DIPPwEUB+UpM7RGkU4aTfcO5GkGhbM/UtasOk7oS67hYXjNENQP6K262Wf3jdg1+p7madAuXru/TtOsMqoV6j0DitkD6HKXxZ7cqFwYeZgN3dQLDOUUpa/+8M8LtFTeouXVB5EwVIo6fAPXYJxRIB9RCUDxh8A0fhhSfJ23l21eZbPkw9+TK22z7COshhi0sej+23dkajFHP6++gL6RR31l3cmvjCCyt8BXaIu7JJs9p0py6RLWgWUv5fMOFK5+S5uPQ9Jt7ZHB7cFCVINp3t8G4w=='
-redis:
-    cluster:
-        nodes: '{cipher}AQALhFtDEJzdvsZmyE74VCIdy9NYwGI+wwuccHI52aJ4KUa5vW2kteyac3WpOP8/4IvHfoNj8hvtS20LTDchQQXVY5FXqfQ9fz2mVl7IPba74bGc7RHn1gRRvOKeWO+XfH3APwx0ileC3AK450phM7pWXNXpkI4DsqRHrN2OqwnyRRmZIJZZ6s0NOgykrE6ymmoay6uF0tmd8yFI7eQscbtxMz5UmqPUU15l9y13kUBbLLdcoiGlmdJue3sqGZ+6V+gH2FhiFNF9o+urz2hlSpbw6df38XP8066X7TEkrcMv+RDx2kAxkOhB5PgjjXFuBOTtO2VFZ1JuLsIsUua7+E0eHPVFleceBqmfKDKqGJGM1MaDqysag/3X/CLs6cNE2cn7AEkAHi2tFf+M9NEbyovPN+XUa/BsFT4yImV1Q5DyTSY7Bpj5Bf7reddJlEKNfFyUmqL3SqlFdurFumZqj7RCf91GuBq0iHOxtrEgB82aug=='
-        retry:
-            max:
-                num: 1000
-        time:
-            out: 10000
-    connect:
-        timeout: 15000
-    max:
-        active: 500
-        idle: 100
-        wait: 10
 server:
     port: 19806
 spring:
@@ -27,6 +13,16 @@ spring:
         url: '{cipher}AQCuFWBSnzNY9yMkbLABQhJgumO1ENY8m9IpGCaHRdb7+x8bXeGJ1TxIWZ/0XCcagKr51P8m/RCY6DWySWSj4U5ugGVeerA0OrvFxoCshGpaE2gxPsw63+NgbG5Sdjg6ZegrV6134D7uUKqaYynCnsbkwW3LRUs3gKzQkSo21Q0JtiO6aywKgKgGlEbkTpU9Vb7VjqaJfiuoUcn7HPpWG6nFv3byEHm4T/GOxkiZVHqyC1Zcq4znmTxcve9MeaNrqaWE805VzoLkTq2h8gkHAm/N1yzhh8VCHDpWdXjEq5f5tXJc4arKh+F+eqOuEsGeo1prKzzVysb0JC+lPPE1MaEuOTiW7nVk5SsMKmeQRStd1oOnQym1uo2bBMZefGRC085Qwd72ExxFfusShUjWjDammdoD9Qgoi2N5H3aKqznjocFrzfKD3PbRtjww6ojkWPQ='
         username: '{cipher}AQCx8LwXAgmv7ef+HThwT6SuHr5E6DpPUEPAtcfVrJOvQ0LYRXDNg9BPVVC97kjAWK+4HH1ypGl7iPivTSLLsOmkcGVf4BH17d9qkLGBtk2WKzB6rvqmKSS/HbnE9dzQXUenEQ+rIxJyzrHPZyhHONj+p3fpynNbWpwmYTJEK/Fm2DmLDp/jFV2XGQVA1eYigZxFBUQdsYwmGoe4anqf5IFPbJR7y5yaN9krP66EbkeUyTaykqDXzBbXCYeK8WpxKtAHmk9Qhzkxnvs1//n/37qyrkJNlsRbmS7SUeloJDGYq5NKhYdpNHkbXsOzaOJaErCcancOz+89sjZCxM6K1R1FmexKpQk59eLyBUgTj/4RfynU1DQjU/aYrIRBcVj5G5s='
         validationQuery: SELECT 1
+spring:
+    redis:
+        cluster:
+            max-redirects: 100
+            yz:
+                nodes: 
+                    - 192.168.7.131:12770
+                    - 192.168.7.206:12770
+            sh:
+                nodes:
 ---
 #qm专用数据库配置
 spring:
