@@ -17,3 +17,8 @@ spring:
         cluster:
             max-redirects: 100
             nodes: 123.59.18.131:12340,123.59.18.206:12342
+    jpa:
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true                
