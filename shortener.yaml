@@ -36,4 +36,33 @@ spring:
             suffix: .html        
 emar:
     domain:
-        url: "http://127.0.0.1:19806/"
+        url: http://127.0.0.1:19806/
+monitor:
+    kafka:
+        click:
+            topic:
+                name:
+                    report: report_cli_v1
+        impression:
+            topic:
+                name:
+                    report: report_imp_v1
+        partition:
+            count: 40
+        topic:
+            name:
+                billing: billing_v1
+    metadata:
+        broker:
+            list: '{cipher}AQBQI0356HhQg7i8gERxHJhN4u7Cr1SyRdsgzwYnrwseYYn4FaiAH0jpunJKBiPbjTg4MecdORi4I8LhAPREDolJQEOa5K00IIwOWWeV0fe+Fd3hLK00ptcHklrjoWbSPQC6mGRDJM0+LOu0vsS+OslX/iXbCG0tjWsyGkRy1Q/FquOhx585xPW5TABW+JdsqrEMIq5bC297kq9vQlY9MZJK88TmFCmGchuB4DhvnbfiMFLnrosptUtQ37JQ3JHgkWD1RTJxxNXv/aYf6BNNQXrE3hyM84k2OAHfxO++6byM8G9VuZnEdh1gaCFnHapux270ZbGyu4eH4uEGJC6vtYe0p5o0WbqG5GmfyAldrwoxo1O0j+ZUVPO39YMeHQKFxtLLa7WW2fUIamCMwwRK6wNLL0J3p/waS5eneuRIUl17e8QH/xefcJhu7CMZ3xqU8SQ='
+    request:
+        required:
+            acks: 1
+        retry: 0
+        timeout:
+            in:
+                ms: 60000
+    send:
+        error:
+            directory: /data/dsp/app/shortener/logs/billing
+            format: dat        
