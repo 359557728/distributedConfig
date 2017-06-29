@@ -37,6 +37,10 @@ spring:
 emar:
     domain:
         url: http://127.0.0.1:19806/
+    bs:
+        deeplink:
+            refresh:
+                cron: 0 */1 * * * ?        
 monitor:
     kafka:
         click:
