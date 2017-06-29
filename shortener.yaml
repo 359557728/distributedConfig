@@ -17,7 +17,7 @@ spring:
         cluster:
             max-redirects: 100
             primary:
-                nodes: 123.59.18.131:12340,123.59.18.206:12342
+                nodes: '{cipher}AQB1ulyvsdD9HFe30fE21j/ekNKVZackwRfEPBmMjKO4J8wG9OChp56KKALPij/ly+nEQMq8ggAnxWVSUqT1ttxYPnZPuSjOOiUklYlIuGp5CKHuHiP3+E+FWPwdcKLYhB83junbIziCigLIGIxgTzcCrInfYV/9xTiD555tZf4aSKiPNKxq9br6WFunvNqEwHm+MDdKHFxA0M91MYPZiYRMSyVLTKILpdsZFmgBLm/Z6Tse1cOAgYthp2YugWpbZbZY+PoZcVU99dM25QZrvSEUhhUZBxn6sly89IMJypWeEDqLsCcr0PQprQiOtbKuRDA93y0BP06LvsTi6z02pUF8t+LEFJcoun0r9N7mhtQuC7MgYVwdx3MMGRDVWkpbenepb4dxU2pVmI/yZWx7TtsXKi5jLLQJQt/B+tmRMm0VSw=='
             assistant:
                 nodes: 192.168.1.242:12770,192.168.1.243:12770               
         pool:
