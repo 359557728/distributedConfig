@@ -44,7 +44,9 @@ emar:
     bs:
         deeplink:
             refresh:
-                cron: 0 */1 * * * ?        
+                cron: 0 */1 * * * ?  
+        fake:
+            ctr: 0.03
 monitor:
     kafka:
         click:
@@ -73,4 +75,5 @@ monitor:
     send:
         error:
             directory: /data/dsp/app/shortener/logs/billing
-            format: dat        
+            format: dat
+            
