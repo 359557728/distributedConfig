@@ -33,7 +33,11 @@ spring:
     mvc:
         view:
             prefix: /
-            suffix: .html        
+            suffix: .html
+    http:
+        encoding:
+            enabled: false
+            force: false            
 emar:
     domain:
         url: http://127.0.0.1:19806/
