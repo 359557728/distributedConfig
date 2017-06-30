@@ -4,7 +4,10 @@ eureka:
         serviceUrl:
             defaultZone: '{cipher}AQA/NB/V/XGGgN5R7ArjPcgTd5E9s+8vTTXmgDM19T1z/vySVUAZ1VThdBIOJlsfOASmBd78cvJ9K+FoPIHL9r511b3BZQXbp6Q5fZZwOEriqhNzOpyPXL3dVtM3Ou6RbmtkeeXh1tL2bQhU++1p7DIPPwEUB+UpM7RGkU4aTfcO5GkGhbM/UtasOk7oS67hYXjNENQP6K262Wf3jdg1+p7madAuXru/TtOsMqoV6j0DitkD6HKXxZ7cqFwYeZgN3dQLDOUUpa/+8M8LtFTeouXVB5EwVIo6fAPXYJxRIB9RCUDxh8A0fhhSfJ23l21eZbPkw9+TK22z7COshhi0sej+23dkajFHP6++gL6RR31l3cmvjCCyt8BXaIu7JJs9p0py6RLWgWUv5fMOFK5+S5uPQ9Jt7ZHB7cFCVINp3t8G4w=='
 server:
-    port: 19806   
+    port: 19806
+    tomcat:
+        accesslog:
+            directory: logs    
 spring:
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
