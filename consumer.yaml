@@ -32,6 +32,9 @@ metadata:
   max:
     age:
       ms: 10000
+  session:
+    timeout:
+      ms: 600000
 redis:
   connect:
     timeout: 60000
