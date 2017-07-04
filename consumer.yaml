@@ -34,7 +34,7 @@ metadata:
       ms: 10000
   session:
     timeout:
-      ms: 600000
+      ms: 120000
 redis:
   connect:
     timeout: 60000
