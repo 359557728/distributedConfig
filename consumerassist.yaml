@@ -50,7 +50,12 @@ redis:
 spring:
   batch:
     job:
-      enabled: false      
+      enabled: false
+    datasource:
+        driver-class-name: org.hsqldb.jdbc.JDBCDriver
+        password: emarbs
+        url: jdbc:hsqldb:file:db/consumer-db
+        username: emarbs      
 ---
 #亦庄Consumer发往亦庄Redis的第一组程序
 spring:
