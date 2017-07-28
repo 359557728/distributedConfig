@@ -37,11 +37,11 @@ metadata:
       ms: 120000
 redis:
   connect:
-    timeout: 60000
+    timeout: 4000
   max:
-    active: 500
-    idle: 350
-    wait: 10
+    active: 30
+    idle: 10
+    wait: 3000
   retry:
     initial:
       interval: 500
