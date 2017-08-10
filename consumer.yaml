@@ -8,7 +8,7 @@ emar:
         write:
           size: 300        
       record:
-        separator: \\(\\*\\*\\*\\)
+        separator: \(\*\*\*\)
       resend:
         cron: 0 */5 * * * ?
       redis:
