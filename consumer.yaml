@@ -429,5 +429,5 @@ emar:
       redis:
         info: '{cipher}AQCA8vrM0bU1eASBRqRpp5MxgxtXp+JtjpghNzLMA3i0i784tTk6Pcxhb5DeOBGZEenTZHsO0WYEHVuzdivGfhzZnYtLDe9As2nySVS28O5e/MU9Im817qYTm5tWBLuLwUXTMhcUOqhlVlCaDeaKnbT4ijlfGc8WVfaxhgLjQU66eXnkPy/x7KPBnRqWT12haOi0oUMjKJXpAeUvaKQVj962dihvxoNOXz8AVhVtQxX89F872ePuPdO6wEtPy/5uTXg9+zBIjRjVAjEVEcEbp3Sqf5/yu9KVGn18Bcg+oqUevyzLUWe14Ifu2NlgIWWU4afIfvsc95kMzoJ3gyMRZZEtNdLm0UpyuMp/45GBhE+rlUl4m1nRRUk+/dvv7YF1HeCedp6f3VoARbHzqJJefnlCb4G0AOztVPhdgB4QTuOpbEnX2VOoUbfSRyMHYT4UAGulbqwAEJjAVNlg3a5ydD5ldyKXsB6Fl57jLPW/LHdVBmuVVwx2efhHsl5q8q4nMADcEirWor6OyossJRbtsh74mxNOoIS2HDCKYY9Dbs++NjbEw9ch6dzfKbAjCfEkdiFsS2aGXhnkAqCowcat01DywV27HshgqLumGDUi23p4hTsY+9qE0akht52q99OYFs7sBUmZy/VdEH5+9nm6Si8iIqrouNyGnu3/Q0kYmTlj94T+KUjYQELxxsuX1htSIz5iSC5+BIEcYhpyF8LsDt68081rhOm09FqxOCrG5bIlSjiJr8e5LzJwShDcBqEbBvDyAUJVswXWJziYTZdyw5Ax0VxtGRWkavSPe3hXsxVfCszeT8RZqLIvvSHzMdbatFLrsWidwPknU3ywDaGDPqDO9npc2TJ59WJVGb+7GalJdZ+WkJHUSJefwQbkbfUSpMG+SPAQaoq8RYxzTimnTUjAFQfef0sjkshUVVK2S79OxWqy3Yojr21s9zGlc8fk/ZDHVQapo7y7wmYIlY6PBM0x'
       record:
-        separator: (---)  
+        separator: \\(---\\) 
       topic: 5010    
