@@ -4,11 +4,6 @@ emar:
       buffer:
         size: 800
         time: 10
-      batch:
-        read:
-          size: 2200
-        write:
-          size: 300
       record:
         separator: (***)
       resend:
