@@ -10,7 +10,7 @@ emar:
       record:
         separator: f1@f2@f3@f4
       resend:
-        cron: 0 */5 * * * ?
+        cron: 0 */1 * * * ?
       redis:
         key: media_mq
   log:
