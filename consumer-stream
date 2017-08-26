@@ -1,4 +1,5 @@
 spring:
+  profiles: ytyg1prd
   cloud:
     stream:
       kstream:
