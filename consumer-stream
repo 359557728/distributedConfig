@@ -1,5 +1,4 @@
 spring:
-  profiles: standalone
   cloud:
     stream:
       kstream:
