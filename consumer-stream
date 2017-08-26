@@ -3,11 +3,11 @@ spring:
     stream:
       kstream:
         binder:
-            configuration:
-                key:
-                    serde: org.apache.kafka.common.serialization.Serdes$StringSerde
-                value:
-                    serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+          configuration:
+            key:
+              serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+            value:
+              serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       kafka:
         binder:
           configuration:
@@ -29,7 +29,6 @@ spring:
             headerMode: raw
           group: statics
           destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1,statics_replay
-          contentType: text/plain
         output:
           producer:
             headerMode: raw
