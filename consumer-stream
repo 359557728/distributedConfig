@@ -3,6 +3,9 @@ spring:
     stream:
       kafka:
         binder:
+          configuration:
+            security:
+              protocol: SASL_SSL
           brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
           zkNodes: 121.201.104.50:2181,121.201.104.52:2181,121.201.104.53:2181
           requiredAcks: 2
