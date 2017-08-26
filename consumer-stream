@@ -25,4 +25,6 @@ spring:
             headerMode: raw
           destination: statics_out
           useNativeEncoding: true
-          contentType: application/json                    
+          contentType: application/json
+server:
+  port: ${port:19940}          
