@@ -35,5 +35,9 @@ spring:
           destination: statics_out
           useNativeEncoding: true
           contentType: application/json
+---
+#亦庄Consumer发往亦庄Redis的第一组程序          
+spring:
+  profiles: ytyg1prd
 server:
-  port: ${port:19940}          
+  port: ${port:19930}       
