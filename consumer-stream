@@ -2,9 +2,13 @@ spring:
   profiles: standalone
   cloud:
     stream:
-      kstream.binder.streamConfiguration:
-        key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde # Use a native Kafka Serde for the key
-        value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde # Use a native Kafka Serde for the value
+      kstream:
+        binder:
+          configuration:
+            key:
+              serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+            value:
+              serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       kafka:
         binder:
           configuration:
