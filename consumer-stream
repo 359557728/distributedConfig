@@ -1,0 +1,28 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 121.201.104.50:9092,121.201.104.52:9092,121.201.104.53:9092
+          zkNodes: 121.201.104.50:2181,121.201.104.52:2181,121.201.104.53:2181
+          requiredAcks: 2
+          autoCreateTopics: false
+      bindings:
+        input:
+          consumer:
+            autoRebalanceEnabled: true
+            autoCommitOffset: false
+            autoCommitOnError: false
+            startOffset: latest
+            enableDlq: true
+            dlqName: statics_replay
+            headerMode: raw
+          group: statics
+          destination: report_imp_pc_v1,report_cli_pc_v1,report_cli_v1,report_imp_v1,statics_replay
+          contentType: text/plain
+        output:
+          producer:
+            headerMode: raw
+          destination: statics_out
+          useNativeEncoding: true
+          contentType: application/json                    
