@@ -1,6 +1,13 @@
 spring:
   cloud:
     stream:
+      kstream:
+        binder:
+            configuration:
+                key:
+                    serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+                value:
+                    serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       kafka:
         binder:
           configuration:
