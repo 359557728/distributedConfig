@@ -16,7 +16,7 @@ spring:
                     binder:
                       brokers: '{cipher}AQA+00cs6IJl8m2t2LsBYX+HWYFTiuQGW0p7Plyq6fEmvdsEBCiCx8gqGzknFQGffJN3AEL8aupgfMlgshfseUBwWtJArL/gNl9r1gfqWHe0n+sWCyI7+3+3wrogZJ01HfgRjRtxQBMCUhlGlbvytyJw3t1Sn2uAaSUOyu4MmqPsqnN+j4eYVYQYCKsqlKAk7aILafZW/GhJV3nlqlOuKh9u0VuvmHgSF6B+edzW3cZwXUl7L0ibWB/wRY+gjWz+++8M3iXOq2/nwpmStrBjtiEGKcuFYdfxvQ4h88dXIuG7eUcvnWlvBpfMg1WFIJ7HVSP8Q6Z7mU9qaU7XJ6/41wBuM160U4Gtd+L/ZftQa0VRVAy7tMKeTR4IWOMZXLhnHNRwi95tjoRJaniMntR312Hwi28m7fzzhAd4FoBsTrrwSbO5+AhIt/Ib+7Lvtlb3EPQ='
                       zkNodes: 123.59.17.83:2181,123.59.17.180:2181,123.59.17.181:2181
-                      requiredAcks: 2
+                      requiredAcks: 1
                       autoCreateTopics: false
                     bindings:
                       input:
