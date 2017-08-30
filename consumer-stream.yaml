@@ -25,7 +25,7 @@ spring:
                   kafka:
                     binder:
                       brokers: '{cipher}AQAEct4Z2gPk2i0Jvgi6kluJivEPnW2SGLRIa5FsJpPdnwplaijZChpJZTFL/1V/c8850zztaN2JwoJysGLDSxJHwoWGapHJLXaj2Yg+6T9xMf+HbyY11mVtaRge5GD+f29WbkVzuvzT1TUe5qLE3qpk8AWUQpB7LeWiBBEOEJ0e69jhc4LPpEtsryY4YIPgLV8QCyIZGh8f6q9RujrpfcHZ2ibBsfB9WuSXS9Z9ebGDCsi7fXfS8qhy67pq/k+l3cANVsDIF/j5Gukjmi43ix0WQEhU8zmQavi8zHWN0dB94fHqzIlcZC6of5s2P+BiiV6sfsT0+fRTJ7IhY9Jtc3diOVNJhlqk3e/PGZ2BTs+gh6nqGEbzX6NUoBZbt/9fjCXAsU31s4Qyeo+tLj4KBLEAbJr2+vfsdaX10tvSF19+M03pvjkRucj2mcSOdVhm/HI='
-                      zkNodes: 121.201.104.50:2181,121.201.104.52:2181,121.201.104.53:2181
+                      zkNodes: 121.201.104.50,121.201.104.52,121.201.104.53
                       requiredAcks: 1
                       autoCreateTopics: false
                     bindings:
