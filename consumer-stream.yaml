@@ -14,7 +14,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
-        hzin:
+        htin:
           destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
           binder: kafkaht
           group: test
@@ -25,6 +25,7 @@ spring:
       binders:
         kafkayz:
           type: kafka
+          defaultCandidate: false
           environment:
             spring:
               cloud:
@@ -46,6 +47,7 @@ spring:
                           dlqName: dmap_media_resend 
         kafkaht:
           type: kafka
+          defaultCandidate: false
           environment:
             spring:
               cloud:
@@ -57,7 +59,7 @@ spring:
                       requiredAcks: 1
                       autoCreateTopics: false
                     bindings:
-                      yzin:
+                      htin:
                         consumer:
                           autoRebalanceEnabled: true
                           autoCommitOffset: false
