@@ -25,6 +25,7 @@ spring:
       binders:
         kafkagd:
           type: kafka
+          defaultCandidate: false
           environment:
             spring:
               cloud:
@@ -46,6 +47,7 @@ spring:
                           dlqName: dmap_media_resend
         kafkayz:
           type: kafka
+          defaultCandidate: false
           environment:
             spring:
               cloud:
