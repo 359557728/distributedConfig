@@ -4,32 +4,7 @@ eureka:
       defaultZone: '{cipher}AQA/NB/V/XGGgN5R7ArjPcgTd5E9s+8vTTXmgDM19T1z/vySVUAZ1VThdBIOJlsfOASmBd78cvJ9K+FoPIHL9r511b3BZQXbp6Q5fZZwOEriqhNzOpyPXL3dVtM3Ou6RbmtkeeXh1tL2bQhU++1p7DIPPwEUB+UpM7RGkU4aTfcO5GkGhbM/UtasOk7oS67hYXjNENQP6K262Wf3jdg1+p7madAuXru/TtOsMqoV6j0DitkD6HKXxZ7cqFwYeZgN3dQLDOUUpa/+8M8LtFTeouXVB5EwVIo6fAPXYJxRIB9RCUDxh8A0fhhSfJ23l21eZbPkw9+TK22z7COshhi0sej+23dkajFHP6++gL6RR31l3cmvjCCyt8BXaIu7JJs9p0py6RLWgWUv5fMOFK5+S5uPQ9Jt7ZHB7cFCVINp3t8G4w=='
 spring:
   cloud:
-    stream:
-      bindings:
-        gdin:
-          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
-          binder: kafkagd
-          group: yz
-          contentType: text/plain
-          consumer:
-            headerMode: raw
-            concurrency: 2
-        yzin:
-          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
-          binder: kafkayz
-          group: yz
-          contentType: text/plain
-          consumer:
-            headerMode: raw
-            concurrency: 2
-        htin:
-          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
-          binder: kafkaht
-          group: yz
-          contentType: text/plain
-          consumer:
-            headerMode: raw
-            concurrency: 2             
+    stream:            
       binders:
         kafkagd:
           type: kafka
@@ -128,6 +103,33 @@ redis:
 #亦庄Consumer消费杭州机房之外的消息写往亦庄Redis         
 spring:
   profiles: yz
+  cloud:
+    stream:
+      bindings:
+        gdin:
+          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
+          binder: kafkagd
+          group: yz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+        yzin:
+          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
+          binder: kafkayz
+          group: yz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+        htin:
+          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
+          binder: kafkaht
+          group: yz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2    
 server:
   port: ${port:19930}
 emar:
@@ -141,6 +143,33 @@ emar:
 #亦庄Consumer消费杭州机房之外的消息写往亦庄Redis         
 spring:
   profiles: hz
+  cloud:
+    stream:
+      bindings:
+        gdin:
+          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
+          binder: kafkagd
+          group: hz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+        yzin:
+          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
+          binder: kafkayz
+          group: hz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+        htin:
+          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
+          binder: kafkaht
+          group: hz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2    
 server:
   port: ${port:19930}
 emar:
