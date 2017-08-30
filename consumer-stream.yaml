@@ -40,9 +40,9 @@ spring:
                       gdin:
                         consumer:
                           autoRebalanceEnabled: true
-                          autoCommitOffset: false
+                          autoCommitOffset: true
                           autoCommitOnError: false
-                          startOffset: latest
+                          startOffset: earliest
                           enableDlq: true
                           dlqName: dmap_media_resend
         kafkayz:
@@ -61,9 +61,9 @@ spring:
                       yzin:
                         consumer:
                           autoRebalanceEnabled: true
-                          autoCommitOffset: false
+                          autoCommitOffset: true
                           autoCommitOnError: false
-                          startOffset: latest
+                          startOffset: earliest
                           enableDlq: true
                           dlqName: dmap_media_resend                           
 ---
