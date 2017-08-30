@@ -9,7 +9,7 @@ spring:
         gdin:
           destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
           binder: kafkagd
-          group: test
+          group: yz
           contentType: text/plain
           consumer:
             headerMode: raw
@@ -17,7 +17,7 @@ spring:
         yzin:
           destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
-          group: test
+          group: yz
           contentType: text/plain
           consumer:
             headerMode: raw
@@ -25,7 +25,7 @@ spring:
         htin:
           destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
           binder: kafkaht
-          group: test
+          group: yz
           contentType: text/plain
           consumer:
             headerMode: raw
