@@ -44,7 +44,6 @@ spring:
                           startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
-      binders:
         kafkayz:
           type: kafka
           environment:
