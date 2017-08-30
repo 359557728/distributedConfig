@@ -21,7 +21,15 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2            
+            concurrency: 2
+        htin:
+          destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
+          binder: kafkaht
+          group: test
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2             
       binders:
         kafkagd:
           type: kafka
@@ -65,7 +73,28 @@ spring:
                           autoCommitOnError: false
                           startOffset: earliest
                           enableDlq: true
-                          dlqName: dmap_media_resend                           
+                          dlqName: dmap_media_resend
+        kafkaht:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream: 
+                  kafka:
+                    binder:
+                      brokers: '{cipher}AQAIVNvkU9iQqhPiIsA+S/k1hXoOsVNmnh5EvP+kNiAEmPRvP80ZR7C5GFRMOkfagdhvSvtLz/Jqd/xK3QITIwoI0NBRLbTKpco6WUlMhe+ICCEjVzSQebpSZX9xqfni31s64SQGBLRWL+/aDDw7rV3XNiy8cscIzYbNcHMiSF7A7awmei1JSKtdhvbpPl3WDdL+C1RF/AhVY2B4r99pc5I5yTlmN7EXYBhASvBqN/y1jKRjKkCq2VuI1xd5wAeuybROGxEIEP/92L7yrZjglqrl658cA4WmLJkYsQ/F9PhiwbcyTAyIqGURq71ZB8WbeJVv/SUrDlN6pGRaI4zjl/QhbdhJ7FMlXulUH4f6YeN5B9Y/aLJX3SDc19Dz6T4rJb1g+zo6fAwPDE8OqI6SRf3SJwtqMxoC/1Z/5fuES7/I2HpREHarZ9ZhNbhI4N5MmTM='
+                      zkNodes: 221.122.127.102,221.122.127.133,221.122.127.139
+                      requiredAcks: 1
+                      autoCreateTopics: false
+                    bindings:
+                      htin:
+                        consumer:
+                          autoRebalanceEnabled: true
+                          autoCommitOffset: true
+                          autoCommitOnError: false
+                          startOffset: earliest
+                          enableDlq: true
+                          dlqName: dmap_media_resend                             
 ---
 #亦庄Consumer发往亦庄Redis的第一组程序          
 spring:
