@@ -5,6 +5,11 @@ spring:
         input:
           destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
+          group: test
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
       binders:
         kafkayz:
           type: kafka
@@ -26,9 +31,7 @@ spring:
                           autoCommitOnError: false
                           startOffset: latest
                           enableDlq: true
-                          dlqName: dmap_media_resend
-                          headerMode: raw
-                        group: test                    
+                          dlqName: dmap_media_resend                                          
 ---
 #亦庄Consumer发往亦庄Redis的第一组程序          
 spring:
