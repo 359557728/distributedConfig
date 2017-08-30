@@ -50,7 +50,7 @@ spring:
                           autoRebalanceEnabled: true
                           autoCommitOffset: true
                           autoCommitOnError: false
-                          startOffset: earliest
+                          startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
         kafkayz:
@@ -71,7 +71,7 @@ spring:
                           autoRebalanceEnabled: true
                           autoCommitOffset: true
                           autoCommitOnError: false
-                          startOffset: earliest
+                          startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
         kafkaht:
@@ -92,7 +92,7 @@ spring:
                           autoRebalanceEnabled: true
                           autoCommitOffset: true
                           autoCommitOnError: false
-                          startOffset: earliest
+                          startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
 emar:
@@ -128,7 +128,7 @@ emar:
 ---
 #亦庄Consumer消费杭州机房之外的消息写往亦庄Redis         
 spring:
-  profiles: yz
+  profiles: hz
 server:
   port: ${port:19930}
 emar:
