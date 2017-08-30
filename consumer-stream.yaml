@@ -105,7 +105,7 @@ emar:
         write:
           size: 300        
       record:
-        separator: f1@f2@f3@f4
+        separator: @s@p
       resend:
         cron: 0 */1 * * * ?
       redis:
