@@ -111,7 +111,19 @@ emar:
       redis:
         key: media_mq
   log:
-    format: dat                          
+    format: dat
+redis:
+  connect:
+    timeout: 4000
+  max:
+    active: 30
+    idle: 10
+    wait: 3000
+  retry:
+    initial:
+      interval: 500
+    max:
+      times: 2    
 ---
 #亦庄Consumer消费杭州机房之外的消息写往亦庄Redis         
 spring:
