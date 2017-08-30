@@ -6,7 +6,7 @@ spring:
   cloud:
     stream:
       bindings:
-        input:
+        yzin:
           destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
           group: test
@@ -28,7 +28,7 @@ spring:
                       requiredAcks: 1
                       autoCreateTopics: false
                     bindings:
-                      input:
+                      yzin:
                         consumer:
                           autoRebalanceEnabled: true
                           autoCommitOffset: false
