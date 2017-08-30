@@ -13,11 +13,10 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2            
+            concurrency: 2
       binders:
         kafkayz:
           type: kafka
-          defaultCandidate: false
           environment:
             spring:
               cloud:
@@ -36,10 +35,10 @@ spring:
                           autoCommitOnError: false
                           startOffset: latest
                           enableDlq: true
-                          dlqName: dmap_media_resend                             
+                          dlqName: dmap_media_resend                                          
 ---
 #亦庄Consumer发往亦庄Redis的第一组程序          
 spring:
   profiles: ytyg1prd
 server:
-  port: ${port:19930}       
+  port: ${port:19930}
