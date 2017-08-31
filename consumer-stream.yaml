@@ -95,7 +95,7 @@ spring:
     stream:
       bindings:
         gdin:
-          destination: 5010,5011,5050,5060,5110,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkagd
           group: yz
           contentType: text/plain
@@ -104,7 +104,7 @@ spring:
             concurrency: 2
             maxAttempts: 1
         yzin:
-          destination: 5010,5011,5050,5060,5110,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
           group: yz
           contentType: text/plain
@@ -113,7 +113,7 @@ spring:
             concurrency: 2
             maxAttempts: 1
         htin:
-          destination: 5010,5011,5050,5060,5110,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkaht
           group: yz
           contentType: text/plain
@@ -136,7 +136,7 @@ spring:
     stream:
       bindings:
         gdin:
-          destination: 5010,5011,5050,5060,5110,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkagd
           group: hz
           contentType: text/plain
@@ -144,7 +144,7 @@ spring:
             headerMode: raw
             concurrency: 2
         yzin:
-          destination: 5010,5011,5050,5060,5110,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
           group: hz
           contentType: text/plain
@@ -152,7 +152,7 @@ spring:
             headerMode: raw
             concurrency: 2
         htin:
-          destination: 5010,5011,5050,5060,5110,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkaht
           group: hz
           contentType: text/plain
