@@ -79,8 +79,6 @@ emar:
       batch:
         write:
           size: 300        
-      record:
-        separator: v@@v
       resend:
         cron: 0 */1 * * * ?
       redis:
