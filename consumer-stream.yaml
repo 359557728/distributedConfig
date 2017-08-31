@@ -74,8 +74,8 @@ emar:
   bs:
     consumer:
       buffer:
-        size: 800
-        time: 10
+        size: 200
+        time: 1
       batch:
         write:
           size: 300        
@@ -93,12 +93,7 @@ redis:
   max:
     active: 30
     idle: 10
-    wait: 3000
-  retry:
-    initial:
-      interval: 500
-    max:
-      times: 2    
+    wait: 3000 
 ---
 #亦庄Consumer消费杭州机房之外的消息写往亦庄Redis         
 spring:
