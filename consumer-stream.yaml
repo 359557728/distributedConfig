@@ -24,7 +24,7 @@ spring:
                         consumer:
                           autoRebalanceEnabled: true
                           autoCommitOffset: true
-                          autoCommitOnError: false
+                          autoCommitOnError: true
                           startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
@@ -45,7 +45,7 @@ spring:
                         consumer:
                           autoRebalanceEnabled: true
                           autoCommitOffset: true
-                          autoCommitOnError: false
+                          autoCommitOnError: true
                           startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
@@ -66,7 +66,7 @@ spring:
                         consumer:
                           autoRebalanceEnabled: true
                           autoCommitOffset: true
-                          autoCommitOnError: false
+                          autoCommitOnError: true
                           startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
@@ -102,6 +102,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
+            maxAttempts: 1
         yzin:
           destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
@@ -110,6 +111,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
+            maxAttempts: 1
         htin:
           destination: 5010,5011,5030,5050,5060,5110,5120,5140,5040,5160,5180,5190,5210,5220,5240,5250,5020,5260,5270,dmap_media_resend
           binder: kafkaht
@@ -117,7 +119,8 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2    
+            concurrency: 2
+            maxAttempts: 1
 server:
   port: ${port:19930}
 emar:
