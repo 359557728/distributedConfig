@@ -85,8 +85,6 @@ emar:
         cron: 0 */1 * * * ?
       redis:
         key: media_mq
-  log:
-    format: dat
 redis:
   connect:
     timeout: 4000
@@ -128,8 +126,6 @@ spring:
 server:
   port: ${port:19930}
 emar:
-  log:
-    directory: /data/dsp/app/consumer-stream-retry/yz
   bs:
     consumer:    
       redis:
@@ -168,8 +164,6 @@ spring:
 server:
   port: ${port:19930}
 emar:
-  log:
-    directory: /data/dsp/app/consumer-stream-retry/hz
   bs:
     consumer:    
       redis:
