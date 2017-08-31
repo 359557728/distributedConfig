@@ -75,10 +75,7 @@ emar:
     consumer:
       buffer:
         size: 200
-        time: 1
-      batch:
-        write:
-          size: 300        
+        time: 1      
       resend:
         cron: 0 */1 * * * ?
       redis:
