@@ -19,10 +19,6 @@ spring:
                       zkNodes: '{cipher}AQACy18dJA1HRIomSjcDx18ClYtA9fUCBXrum7FSBhPR3P16hqu+lfBZYAheOIuzdlumUSKE/LGWgnmpPb6wrHKCmZ0VtQyplPO7FLF9S5fde/mC+jMBWBE/8+a7gWHiG/bYvTu9MYnJF2xlLDi+fTGNuJdwvTmV0KRmS7Dgl0J7UmI5nj07RnMAlxp6ZerKzX/LY40YeWrcR0cjpi0j0+IgRDymuzf4B9VygsLWYNA8ZLkxLaEbqzjZu/KjrzpvBsZaEAXG7qJ6eALZUX2S81kY3cEij/EbJVlmwPi7fMvdJjCJBmc50SDK9c3l7Gjq7oHB6R6+7BgKDYtLijzooYX1eVoX7b9memJdg5tfYMPTbVO8V/rgobTeuu/uSTrKD0NK9ss6wy5YhU6l0GsvB3QWrmhxmTc00dirmV4h3SStNQ=='
                       requiredAcks: 1
                       autoCreateTopics: false
-                      configuration:
-                        session:
-                          timeout:
-                            ms: 120000
                     bindings:
                       gdin:
                         consumer:
@@ -32,6 +28,10 @@ spring:
                           startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
+                          configuration:
+                            session:
+                              timeout:
+                                ms: 120000                          
         kafkayz:
           type: kafka
           environment:
@@ -43,11 +43,7 @@ spring:
                       brokers: '{cipher}AQA+00cs6IJl8m2t2LsBYX+HWYFTiuQGW0p7Plyq6fEmvdsEBCiCx8gqGzknFQGffJN3AEL8aupgfMlgshfseUBwWtJArL/gNl9r1gfqWHe0n+sWCyI7+3+3wrogZJ01HfgRjRtxQBMCUhlGlbvytyJw3t1Sn2uAaSUOyu4MmqPsqnN+j4eYVYQYCKsqlKAk7aILafZW/GhJV3nlqlOuKh9u0VuvmHgSF6B+edzW3cZwXUl7L0ibWB/wRY+gjWz+++8M3iXOq2/nwpmStrBjtiEGKcuFYdfxvQ4h88dXIuG7eUcvnWlvBpfMg1WFIJ7HVSP8Q6Z7mU9qaU7XJ6/41wBuM160U4Gtd+L/ZftQa0VRVAy7tMKeTR4IWOMZXLhnHNRwi95tjoRJaniMntR312Hwi28m7fzzhAd4FoBsTrrwSbO5+AhIt/Ib+7Lvtlb3EPQ='
                       zkNodes: '{cipher}AQAM92XGYxBzvvPhVmloB2Xa+RYu1Z6bDIptj5dNZpgD1e5BP7I8EQS/UC0QXL93Jzy/6IyEaiOiQxruGgEOgctQHqDu9HOZLbNvJs8QTHIR5uUKirIE2RxT0pKPWszdu6ru39K4/RzpPTiBApWxQKAMRNqfh2xU6ofaqEQYN79jMYVr2usq08iaa3jmnahYrMmACGSN7tgOFEnrgAY/apuWenhOFr+pnhJJaOVnxv07EkpR75T1EvQop5Sow/3aRhtzy/AhKwY+C2Kru1fS06dQl+37OHqsGICkX4Q+Do2nWKf5QANwocTM2Zg8j41OE1WC+Ri3hzltwhTJYULCk0Bv2jxqrd5fgTOTDthDPu+WLwAiifxzab9B117d+Ez/LTaE6kmCRZbE9uqJb1xiiW1CuJOR/TCziiCP+bBx48h47A=='
                       requiredAcks: 1
-                      autoCreateTopics: false
-                      configuration:
-                        session:
-                          timeout:
-                            ms: 120000                      
+                      autoCreateTopics: false                   
                     bindings:
                       yzin:
                         consumer:
@@ -57,6 +53,10 @@ spring:
                           startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
+                          configuration:
+                            session:
+                              timeout:
+                                ms: 120000                              
         kafkaht:
           type: kafka
           environment:
@@ -68,11 +68,7 @@ spring:
                       brokers: '{cipher}AQAIVNvkU9iQqhPiIsA+S/k1hXoOsVNmnh5EvP+kNiAEmPRvP80ZR7C5GFRMOkfagdhvSvtLz/Jqd/xK3QITIwoI0NBRLbTKpco6WUlMhe+ICCEjVzSQebpSZX9xqfni31s64SQGBLRWL+/aDDw7rV3XNiy8cscIzYbNcHMiSF7A7awmei1JSKtdhvbpPl3WDdL+C1RF/AhVY2B4r99pc5I5yTlmN7EXYBhASvBqN/y1jKRjKkCq2VuI1xd5wAeuybROGxEIEP/92L7yrZjglqrl658cA4WmLJkYsQ/F9PhiwbcyTAyIqGURq71ZB8WbeJVv/SUrDlN6pGRaI4zjl/QhbdhJ7FMlXulUH4f6YeN5B9Y/aLJX3SDc19Dz6T4rJb1g+zo6fAwPDE8OqI6SRf3SJwtqMxoC/1Z/5fuES7/I2HpREHarZ9ZhNbhI4N5MmTM='
                       zkNodes: '{cipher}AQCU4pggohhwuJULJ3phUsla7VIncCzqLp8jRWZ2xBylh+HUbJhEGL9B3OarCofdJUqgNhnmUbEVX4FWYwyg827MSdun6KZakByAEDjak3o500lS0qY8tm7ERvylQnilS78ICTa4XtQs7Dvol5o6J2/aalyga+u6MZ32Av9/AtemSBYidO3pquCq0X4r2JY48fanLp2PCknWvR3dESWDtpKL6vRdq36iC4HcwqbvfGbdAebFJKCWc7GdOHUnVmRztIapDnUm1lY9vD6dQhKeBKbB3hPX3spv2V80Xutt38IykQdwSoPgB5RKmDiNPn17qcaW5D1ghMsFH88EcUccYh39ASesvJ6D68L0cQ/ZhjvEgPh0pQk4/TTZySA9/AIpPZo3h5wMmcwqBtwH4WcwZest1q87HHbNq8I9JBa3dWJz2A=='
                       requiredAcks: 1
-                      autoCreateTopics: false
-                      configuration:
-                        session:
-                          timeout:
-                            ms: 120000                      
+                      autoCreateTopics: false                    
                     bindings:
                       htin:
                         consumer:
@@ -82,6 +78,10 @@ spring:
                           startOffset: latest
                           enableDlq: true
                           dlqName: dmap_media_resend
+                          configuration:
+                            session:
+                              timeout:
+                                ms: 120000                              
 emar:
   bs:
     consumer:
