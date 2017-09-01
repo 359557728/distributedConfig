@@ -29,9 +29,7 @@ spring:
                           enableDlq: true
                           dlqName: dmap_media_resend
                           configuration:
-                            session:
-                              timeout:
-                                ms: 120000                          
+                            session.timeout.ms: 120000                          
         kafkayz:
           type: kafka
           environment:
@@ -54,9 +52,7 @@ spring:
                           enableDlq: true
                           dlqName: dmap_media_resend
                           configuration:
-                            session:
-                              timeout:
-                                ms: 120000                              
+                            session.timeout.ms: 120000                             
         kafkaht:
           type: kafka
           environment:
@@ -79,9 +75,7 @@ spring:
                           enableDlq: true
                           dlqName: dmap_media_resend
                           configuration:
-                            session:
-                              timeout:
-                                ms: 120000                              
+                            session.timeout.ms: 120000                             
 emar:
   bs:
     consumer:
