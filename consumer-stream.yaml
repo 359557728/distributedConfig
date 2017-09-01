@@ -19,6 +19,10 @@ spring:
                       zkNodes: '{cipher}AQACy18dJA1HRIomSjcDx18ClYtA9fUCBXrum7FSBhPR3P16hqu+lfBZYAheOIuzdlumUSKE/LGWgnmpPb6wrHKCmZ0VtQyplPO7FLF9S5fde/mC+jMBWBE/8+a7gWHiG/bYvTu9MYnJF2xlLDi+fTGNuJdwvTmV0KRmS7Dgl0J7UmI5nj07RnMAlxp6ZerKzX/LY40YeWrcR0cjpi0j0+IgRDymuzf4B9VygsLWYNA8ZLkxLaEbqzjZu/KjrzpvBsZaEAXG7qJ6eALZUX2S81kY3cEij/EbJVlmwPi7fMvdJjCJBmc50SDK9c3l7Gjq7oHB6R6+7BgKDYtLijzooYX1eVoX7b9memJdg5tfYMPTbVO8V/rgobTeuu/uSTrKD0NK9ss6wy5YhU6l0GsvB3QWrmhxmTc00dirmV4h3SStNQ=='
                       requiredAcks: 1
                       autoCreateTopics: false
+                      configuration:
+                        session:
+                          timeout:
+                            ms: 120000
                     bindings:
                       gdin:
                         consumer:
@@ -40,6 +44,10 @@ spring:
                       zkNodes: '{cipher}AQAM92XGYxBzvvPhVmloB2Xa+RYu1Z6bDIptj5dNZpgD1e5BP7I8EQS/UC0QXL93Jzy/6IyEaiOiQxruGgEOgctQHqDu9HOZLbNvJs8QTHIR5uUKirIE2RxT0pKPWszdu6ru39K4/RzpPTiBApWxQKAMRNqfh2xU6ofaqEQYN79jMYVr2usq08iaa3jmnahYrMmACGSN7tgOFEnrgAY/apuWenhOFr+pnhJJaOVnxv07EkpR75T1EvQop5Sow/3aRhtzy/AhKwY+C2Kru1fS06dQl+37OHqsGICkX4Q+Do2nWKf5QANwocTM2Zg8j41OE1WC+Ri3hzltwhTJYULCk0Bv2jxqrd5fgTOTDthDPu+WLwAiifxzab9B117d+Ez/LTaE6kmCRZbE9uqJb1xiiW1CuJOR/TCziiCP+bBx48h47A=='
                       requiredAcks: 1
                       autoCreateTopics: false
+                      configuration:
+                        session:
+                          timeout:
+                            ms: 120000                      
                     bindings:
                       yzin:
                         consumer:
@@ -61,6 +69,10 @@ spring:
                       zkNodes: '{cipher}AQCU4pggohhwuJULJ3phUsla7VIncCzqLp8jRWZ2xBylh+HUbJhEGL9B3OarCofdJUqgNhnmUbEVX4FWYwyg827MSdun6KZakByAEDjak3o500lS0qY8tm7ERvylQnilS78ICTa4XtQs7Dvol5o6J2/aalyga+u6MZ32Av9/AtemSBYidO3pquCq0X4r2JY48fanLp2PCknWvR3dESWDtpKL6vRdq36iC4HcwqbvfGbdAebFJKCWc7GdOHUnVmRztIapDnUm1lY9vD6dQhKeBKbB3hPX3spv2V80Xutt38IykQdwSoPgB5RKmDiNPn17qcaW5D1ghMsFH88EcUccYh39ASesvJ6D68L0cQ/ZhjvEgPh0pQk4/TTZySA9/AIpPZo3h5wMmcwqBtwH4WcwZest1q87HHbNq8I9JBa3dWJz2A=='
                       requiredAcks: 1
                       autoCreateTopics: false
+                      configuration:
+                        session:
+                          timeout:
+                            ms: 120000                      
                     bindings:
                       htin:
                         consumer:
