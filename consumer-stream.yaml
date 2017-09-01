@@ -83,9 +83,7 @@ emar:
     consumer:
       buffer:
         size: 200
-        time: 1      
-      resend:
-        cron: 0 */1 * * * ?
+        time: 1
       redis:
         key: media_mq
 redis:
