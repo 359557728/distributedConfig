@@ -107,7 +107,7 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2
+            concurrency: 1
             maxAttempts: 1
         yzin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
@@ -116,7 +116,7 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2
+            concurrency: 1
             maxAttempts: 1
         htin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
@@ -125,7 +125,7 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2
+            concurrency: 1
             maxAttempts: 1
 server:
   port: ${port:19930}
@@ -148,7 +148,7 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2
+            concurrency: 1
         yzin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
@@ -156,7 +156,7 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2
+            concurrency: 1
         htin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkaht
@@ -164,7 +164,7 @@ spring:
           contentType: text/plain
           consumer:
             headerMode: raw
-            concurrency: 2    
+            concurrency: 1    
 server:
   port: ${port:19930}
 emar:
