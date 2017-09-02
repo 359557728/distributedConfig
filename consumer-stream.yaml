@@ -8,7 +8,6 @@ spring:
       binders:
         kafkagd:
           type: kafka
-          defaultCandidate: true
           environment:
             spring:
               cloud:
@@ -32,7 +31,6 @@ spring:
                             session.timeout.ms: 120000                          
         kafkayz:
           type: kafka
-          defaultCandidate: true
           environment:
             spring:
               cloud:
@@ -56,7 +54,6 @@ spring:
                             session.timeout.ms: 120000                             
         kafkaht:
           type: kafka
-          defaultCandidate: true
           environment:
             spring:
               cloud:
@@ -108,7 +105,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 1
+            maxAttempts: 5
         yzin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
@@ -117,7 +114,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 1
+            maxAttempts: 5
         htin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkaht
@@ -126,7 +123,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 1
+            maxAttempts: 5
 server:
   port: ${port:19930}
 emar:
@@ -149,7 +146,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 1
+            maxAttempts: 5
         yzin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkayz
@@ -158,7 +155,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 1
+            maxAttempts: 5
         htin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5250,5020,5260,5270,dmap_media_resend
           binder: kafkaht
@@ -167,7 +164,7 @@ spring:
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 1
+            maxAttempts: 5
 server:
   port: ${port:19930}
 emar:
