@@ -8,6 +8,8 @@ spring:
       binders:
         kafkagd:
           type: kafka
+          inheritEnvironment: false
+          defaultCandidate: false
           environment:
             spring:
               cloud:
@@ -28,6 +30,8 @@ spring:
                             session.timeout.ms: 120000                          
         kafkayz:
           type: kafka
+          inheritEnvironment: false
+          defaultCandidate: false
           environment:
             spring:
               cloud:
@@ -48,6 +52,8 @@ spring:
                             session.timeout.ms: 120000                             
         kafkaht:
           type: kafka
+          inheritEnvironment: false
+          defaultCandidate: false
           environment:
             spring:
               cloud:
