@@ -24,7 +24,7 @@ spring:
                         consumer:
                           autoCommitOnError: true
                           startOffset: latest
-                          enableDlq: true
+                          enableDlq: false
                           dlqName: dmap_media_resend
                           configuration:
                             session.timeout.ms: 250000                          
@@ -46,7 +46,7 @@ spring:
                         consumer:
                           autoCommitOnError: true
                           startOffset: latest
-                          enableDlq: true
+                          enableDlq: false
                           dlqName: dmap_media_resend
                           configuration:
                             session.timeout.ms: 250000                             
@@ -68,7 +68,7 @@ spring:
                         consumer:
                           autoCommitOnError: true
                           startOffset: latest
-                          enableDlq: true
+                          enableDlq: false
                           dlqName: dmap_media_resend
                           configuration:
                             session.timeout.ms: 250000                             
