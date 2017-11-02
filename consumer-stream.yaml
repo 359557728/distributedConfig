@@ -70,7 +70,7 @@ emar:
   bs:
     consumer:
       buffer:
-        size: 500
+        size: 300
         time: 3
       redis:
         key: media_mq
