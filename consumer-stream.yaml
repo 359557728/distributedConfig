@@ -71,7 +71,7 @@ emar:
     consumer:
       buffer:
         size: 300
-        time: 3
+        time: 1
       redis:
         key: media_mq
 redis:
