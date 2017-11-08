@@ -1,0 +1,165 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: '{cipher}AQAZqayNZZBQGm+6XSlpRn85ESQxVxKokpoi43nvgns8ICrAWCOX4qE1uy38rCLt4JGxTmLmoBQ062HZIWSYlL8wyw7MdWHjDNvftJusByZuWk9KbSVcCVHwO9/DPJJYKUz55NhVp4lMof6xQIvgThSf/H+AcCRVH5Mb9L6vky9i9soUPkyx3BOpH9JWHs4E2Oj9lQK5dQ1pHqOJ0TxqT122sURCDaL9kaSaTtPY7MpbKLGuDjsRXETCu3OO6s0bVBDx6AF9GVRuDD5MGTw/Q9G7QUQyh9GX0yRI5FAco+40V50tlw9Rc70bUh+6t0Pq4Tg+kknrvi7Wa97aw1a0BDMz91MowmYQs7NybKq3yLsZCvjJKf65fskMG0jGkIblojkvI4J1AU2r8kjIqKhX9kGIs/Xej+FfeUzHhq6rGaT1Uw=='
+spring:
+  cloud:
+    stream:            
+      binders:
+        kafkagd:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream: 
+                  kafka:
+                    binder:
+                      brokers: '{cipher}AQAEct4Z2gPk2i0Jvgi6kluJivEPnW2SGLRIa5FsJpPdnwplaijZChpJZTFL/1V/c8850zztaN2JwoJysGLDSxJHwoWGapHJLXaj2Yg+6T9xMf+HbyY11mVtaRge5GD+f29WbkVzuvzT1TUe5qLE3qpk8AWUQpB7LeWiBBEOEJ0e69jhc4LPpEtsryY4YIPgLV8QCyIZGh8f6q9RujrpfcHZ2ibBsfB9WuSXS9Z9ebGDCsi7fXfS8qhy67pq/k+l3cANVsDIF/j5Gukjmi43ix0WQEhU8zmQavi8zHWN0dB94fHqzIlcZC6of5s2P+BiiV6sfsT0+fRTJ7IhY9Jtc3diOVNJhlqk3e/PGZ2BTs+gh6nqGEbzX6NUoBZbt/9fjCXAsU31s4Qyeo+tLj4KBLEAbJr2+vfsdaX10tvSF19+M03pvjkRucj2mcSOdVhm/HI='
+                      zkNodes: '{cipher}AQACy18dJA1HRIomSjcDx18ClYtA9fUCBXrum7FSBhPR3P16hqu+lfBZYAheOIuzdlumUSKE/LGWgnmpPb6wrHKCmZ0VtQyplPO7FLF9S5fde/mC+jMBWBE/8+a7gWHiG/bYvTu9MYnJF2xlLDi+fTGNuJdwvTmV0KRmS7Dgl0J7UmI5nj07RnMAlxp6ZerKzX/LY40YeWrcR0cjpi0j0+IgRDymuzf4B9VygsLWYNA8ZLkxLaEbqzjZu/KjrzpvBsZaEAXG7qJ6eALZUX2S81kY3cEij/EbJVlmwPi7fMvdJjCJBmc50SDK9c3l7Gjq7oHB6R6+7BgKDYtLijzooYX1eVoX7b9memJdg5tfYMPTbVO8V/rgobTeuu/uSTrKD0NK9ss6wy5YhU6l0GsvB3QWrmhxmTc00dirmV4h3SStNQ=='
+                      autoCreateTopics: false
+                    bindings:
+                      gdin:
+                        consumer:
+                          autoCommitOnError: true
+                          startOffset: latest
+                          enableDlq: false
+                          dlqName: dmap_media_resend
+                          configuration:
+                            session.timeout.ms: 250000                          
+        kafkayz:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream: 
+                  kafka:
+                    binder:
+                      brokers: '{cipher}AQA+00cs6IJl8m2t2LsBYX+HWYFTiuQGW0p7Plyq6fEmvdsEBCiCx8gqGzknFQGffJN3AEL8aupgfMlgshfseUBwWtJArL/gNl9r1gfqWHe0n+sWCyI7+3+3wrogZJ01HfgRjRtxQBMCUhlGlbvytyJw3t1Sn2uAaSUOyu4MmqPsqnN+j4eYVYQYCKsqlKAk7aILafZW/GhJV3nlqlOuKh9u0VuvmHgSF6B+edzW3cZwXUl7L0ibWB/wRY+gjWz+++8M3iXOq2/nwpmStrBjtiEGKcuFYdfxvQ4h88dXIuG7eUcvnWlvBpfMg1WFIJ7HVSP8Q6Z7mU9qaU7XJ6/41wBuM160U4Gtd+L/ZftQa0VRVAy7tMKeTR4IWOMZXLhnHNRwi95tjoRJaniMntR312Hwi28m7fzzhAd4FoBsTrrwSbO5+AhIt/Ib+7Lvtlb3EPQ='
+                      zkNodes: '{cipher}AQAM92XGYxBzvvPhVmloB2Xa+RYu1Z6bDIptj5dNZpgD1e5BP7I8EQS/UC0QXL93Jzy/6IyEaiOiQxruGgEOgctQHqDu9HOZLbNvJs8QTHIR5uUKirIE2RxT0pKPWszdu6ru39K4/RzpPTiBApWxQKAMRNqfh2xU6ofaqEQYN79jMYVr2usq08iaa3jmnahYrMmACGSN7tgOFEnrgAY/apuWenhOFr+pnhJJaOVnxv07EkpR75T1EvQop5Sow/3aRhtzy/AhKwY+C2Kru1fS06dQl+37OHqsGICkX4Q+Do2nWKf5QANwocTM2Zg8j41OE1WC+Ri3hzltwhTJYULCk0Bv2jxqrd5fgTOTDthDPu+WLwAiifxzab9B117d+Ez/LTaE6kmCRZbE9uqJb1xiiW1CuJOR/TCziiCP+bBx48h47A=='
+                      autoCreateTopics: false                   
+                    bindings:
+                      yzin:
+                        consumer:
+                          autoCommitOnError: true
+                          startOffset: latest
+                          enableDlq: false
+                          dlqName: dmap_media_resend
+                          configuration:
+                            session.timeout.ms: 250000                             
+        kafkaht:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream: 
+                  kafka:
+                    binder:
+                      brokers: '{cipher}AQAIVNvkU9iQqhPiIsA+S/k1hXoOsVNmnh5EvP+kNiAEmPRvP80ZR7C5GFRMOkfagdhvSvtLz/Jqd/xK3QITIwoI0NBRLbTKpco6WUlMhe+ICCEjVzSQebpSZX9xqfni31s64SQGBLRWL+/aDDw7rV3XNiy8cscIzYbNcHMiSF7A7awmei1JSKtdhvbpPl3WDdL+C1RF/AhVY2B4r99pc5I5yTlmN7EXYBhASvBqN/y1jKRjKkCq2VuI1xd5wAeuybROGxEIEP/92L7yrZjglqrl658cA4WmLJkYsQ/F9PhiwbcyTAyIqGURq71ZB8WbeJVv/SUrDlN6pGRaI4zjl/QhbdhJ7FMlXulUH4f6YeN5B9Y/aLJX3SDc19Dz6T4rJb1g+zo6fAwPDE8OqI6SRf3SJwtqMxoC/1Z/5fuES7/I2HpREHarZ9ZhNbhI4N5MmTM='
+                      zkNodes: '{cipher}AQCU4pggohhwuJULJ3phUsla7VIncCzqLp8jRWZ2xBylh+HUbJhEGL9B3OarCofdJUqgNhnmUbEVX4FWYwyg827MSdun6KZakByAEDjak3o500lS0qY8tm7ERvylQnilS78ICTa4XtQs7Dvol5o6J2/aalyga+u6MZ32Av9/AtemSBYidO3pquCq0X4r2JY48fanLp2PCknWvR3dESWDtpKL6vRdq36iC4HcwqbvfGbdAebFJKCWc7GdOHUnVmRztIapDnUm1lY9vD6dQhKeBKbB3hPX3spv2V80Xutt38IykQdwSoPgB5RKmDiNPn17qcaW5D1ghMsFH88EcUccYh39ASesvJ6D68L0cQ/ZhjvEgPh0pQk4/TTZySA9/AIpPZo3h5wMmcwqBtwH4WcwZest1q87HHbNq8I9JBa3dWJz2A=='
+                      autoCreateTopics: false                    
+                    bindings:
+                      htin:
+                        consumer:
+                          autoCommitOnError: true
+                          startOffset: latest
+                          enableDlq: false
+                          dlqName: dmap_media_resend
+                          configuration:
+                            session.timeout.ms: 250000                             
+emar:
+  bs:
+    consumer:
+      buffer:
+        size: 300
+        time: 1
+      redis:
+        key: media_mq
+redis:
+  connect:
+    timeout: 4000
+  max:
+    active: 30
+    idle: 10
+    wait: 3000 
+---
+#亦庄Consumer消费杭州机房之外的kafka消息写往亦庄Redis         
+spring:
+  profiles: yz
+  cloud:
+    stream:
+      bindings:
+        gdin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          binder: kafkagd
+          group: yz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5
+        yzin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          binder: kafkayz
+          group: yz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5
+        htin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          binder: kafkaht
+          group: yz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5
+server:
+  port: ${port:19930}
+emar:
+  bs:
+    consumer:    
+      redis:
+        info: '{cipher}AQCUb5JlKT43zRNUPJY+igClNuBzm4uzWdY/nyzF37OQR4cr6SU/Y1+j0C3/Hc4s5/vGtfoHqUTmj0JaQcFiQ6xgyr4RfbbwYMkMWqm+Gqn1ewOtVXk8B9KHogWwyGXlFSKTO54PMsVZSBTefnKT3l9LQaff1JtOhAsL/866jdpdSgpVh/fQki+Ui3dZocUHz4S48BLAwmL1SEdofuZRSHrUUAXOqwaeST6TrsH2yrIZUZRGIGqIHaISE/QWXdeSu7HkaExkc9lPeLV7FqkzqBcKS9cjHRvjiCi++WUELhmStf5A5b1xZFmF1X5vKvjm535DkiS4aAtUU4vv6hBACRD8iLeMd452BGwMQCsma+41N3XJBzFIHpQ7/gB4zXl+IiKlJJ9hGEpznq7pVzckqOy3oj5eePRqG5U5MiZJtmKxd1J7chpjTbTRowbSE+JP/06bvPezV9l+Gtd++y0E+8pwMal/3Am9PpvOoTDlr/KBPzEfKJ+ZoKd4IamwTH0PZkKlS19I2aBAB9bk/d13t4MOnpmJsuy2E3E+mnHaEGht+REhEWQgBnd2E1cySrKvMyFmsWVAkPwyJ6XW7slM22epv+vbV7Ka0E+cZL2llZQkdOMEh9GErn4WGHNAg+g6HEydy45/vh95kNLi7CzXHMONMdlr/b7dTXuOMTz/CAEZ+Gj21bmesxwIh5dfhifSN48SE0Hzas7/fNXBC/lA/swE+160NdNVVDycFi5TNWVAo8LLjGJlXxO2oSf7nvwdpYlhw2IF6onzDYFe5pk4AtDoEKhfXe56ZuCQxcLP+an8nTwCB079WtkBKxX2b6aBsPmoEpZfKjHReDx9zr6FlAkcfFqfMCEQAGTw36A9k4e10362PyHf3RiZ2VhMK2Kz3yOC6dGzIx9rp4qKU/LBg15DcNLDJ7KSGmZHwfhlc7/rFhkpMdWaDLaCRyGQftvsXATh30cJn0+4RDcBoUBoEAuAYzWbxl1LqYH3QSZYQkQsZKVLBIyE3XWP/Vv1dyMO7c2ALGOSi9jTDavnCEqgjjNDNDkN6POJFOWOD6lLqQXteA=='
+---
+#杭州Consumer消费杭州机房之外的kafka消息写往杭州Redis         
+spring:
+  profiles: hz
+  cloud:
+    stream:
+      bindings:
+        gdin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          binder: kafkagd
+          group: hz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5
+        yzin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          binder: kafkayz
+          group: hz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5
+        htin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          binder: kafkaht
+          group: hz
+          contentType: text/plain
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5
+server:
+  port: ${port:19930}
+emar:
+  bs:
+    consumer:    
+      redis:
+        info: '{cipher}AQBSLVP61Wvc5tfNStZmw9y7KFZk7L72a+ElCb1j6u2q9NPlALiqeVBPRhHCg4WOIORmm6K2QeKh4RocXXd4ukA+fKFM6lxSxAxBYdLB3uasA83txfNMkHPnVMwqoMqG4u8PHZe+iY/MJofJWfncRUNONWfd753bOA7afxFcushKpVlSgGUUS/DasQtFa205EbWaRzBtdfMgDw6wEYhqxHs5zqYYxmrZIgaAIXPibOkOMwalV+xTJwdupzfb0X9WZh2TGgEpGn+vOhoJk/xAGA+pfzIvGWuaUnKwF13Pr9NQpx5wWIz6t4Sv+DVeKKRQFJjokqIaCe8f5TyAKQH6vWarvdbqpyd+Jq3XLeYIuo/mJ+U/QQBBoV2SDLJXuz1RRuqwLr6KPVt6Z3CsC6YLgka6VX41cCRMC+Ildp3r2502MTywq3zgMRn6lweFOg/5JclNKsTv/Er9KhpzUlWxphw3t3NGn/MOkb5kxMQax1Kev4fNtvC6qdskGzCaI9u5Ekrq3QpKZxFb6eQQYH2Rhlx9x22BaKpvvApyRUHf9tYGDIMm/onghk8Ci0LXycXJZewTwYrdDe8O1WKHv7yAebY0LtzsqvvoxoH4hI/g/1XVwe7Mx8QD9LabboDW19W6kGFtWXrb0sW1dK+K5BsNOIEHd6Ef8RSRsN1BhRg2Tmwt/ioDyjd8SUrWBr0Xe1g3XYjrAWc9Wl7Tn2bqz77Vxq0MEtFMWEuZPye26eFd1jrprDH6kpoYznLzyr51dwO6aMsSldFea0siGvaBS+nXff7Hcbb9sjmWosID9qPc8iDe7sbWLyo14ydTXxweq66jCoyZeW0kNc37DEuKoCrXtAOy38HCXO1CiO2qw+mgfOrkV9xq2lgxLjh/dGkPW425+B7I7CI66DyNowsigoj2Zl17BQXGtoil1P0MIuebkvSQBBJU6bpRIdcUIZzdG0hEYbjnDQ9kz7nVXLHx5YzCZL9vnzHvdNuGXd6lDvDOQMjqKrmGt2QQkFjHc7TqikGP7ezukLFXcTQmwz0VxNl6vI6fGjmAdyMR9aKVy7NysH1rgo/Qflp2d4ntt9oX++RgncQ='
