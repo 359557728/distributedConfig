@@ -107,10 +107,10 @@ spring:
   profiles: yz
   cloud:
     stream:
-      default:
-        destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend   
       bindings:
         gdin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          contentType: text/plain        
           binder: kafkagd
           group: yz
           consumer:
@@ -118,6 +118,8 @@ spring:
             concurrency: 2
             maxAttempts: 5          
         yzin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          contentType: text/plain        
           binder: kafkayz
           group: yz
           consumer:
@@ -125,6 +127,8 @@ spring:
             concurrency: 2
             maxAttempts: 5          
         htin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          contentType: text/plain        
           binder: kafkaht
           group: yz
           consumer:
@@ -132,6 +136,8 @@ spring:
             concurrency: 2
             maxAttempts: 5          
         hzin:
+          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
+          contentType: text/plain        
           binder: kafkahz  
           group: yz
           consumer:
