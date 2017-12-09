@@ -114,7 +114,7 @@ spring:
         consumer:
           headerMode: raw
           concurrency: 2
-          maxAttempts: 5        
+          maxAttempts: 1       
       bindings:
         gdin:
           binder: kafkagd
@@ -144,7 +144,7 @@ spring:
         consumer:
           headerMode: raw
           concurrency: 2
-          maxAttempts: 5      
+          maxAttempts: 1     
       bindings:
         gdin:
           binder: kafkagd
