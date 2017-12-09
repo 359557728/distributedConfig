@@ -65,27 +65,7 @@ spring:
                           enableDlq: false
                           dlqName: dmap_media_resend
                           configuration:
-                            session.timeout.ms: 250000
-        kafkahz:
-          type: kafka
-          environment:
-            spring:
-              cloud:
-                stream: 
-                  kafka:
-                    binder:
-                      brokers: '{cipher}AQCF9gkyoaPwqdKriy5brcO7MOQ8BpJkotXww79FY4ccm8JhO45U5yLPaoA0A3fxTOtuux1WjPDG9ypLGLlxDlHUyXWf2XMLQqRv2MMii1tLLEojGK9HIVHfC5CZuc2BCZSWU7WLHavRXD/4EN/M2TWAwFw/J1FjU5wHGikoXpyXoJJOz+oSnDhX5CPpRkkfdW/A4xchyQX9Ysh1t3Q8XtQy8STvBfiUd9uDCqfLrEW5+9B/voZf15GRi+137VdyT6n/g8g6Z7iAInPiLZ70qLwL5VK8nWoQHGpVHfm8PQh+lMkfcXMxyt+FO+EU2EgefJwQ1sIG4ifW+MLC3bk0RdoBVMHPdxxvmvciI2lTJYBkNi4X0/3GrSGNwtmWJVGaFQ+70Pfwvf4i3PAfR0kTmnY9uSDrjuoTEqwSsM+DOjKkDaCAkFMKw3mxVAFRrPhbmFU='
-                      zkNodes: '{cipher}AQBMjk299RkB3iAWjvzDxhOz0FgyyuAI/5CjwWN0sGYiqUIPBJG+IgQc63J53w9L0mPD14oL/IdHcQUeTpx0gvw87lg1ygWhle08pTFuYCWoNpgOtU5iaOAubVLSP1+iEGtpxaGRkuwexWZfC5E6+z+c/HinLv5dxSJzB24Cb9adN4nEgIjFjxhwZHy7aC1Kqd1lkLlbhWFYdNn3PvzkLZptSoS+ouK2fN25BevG7IUzEnHjwzC1UAl/ofsy6myGzHAyTOY1FDuGxpN0aBufJ3QmdFO8O62XM5CFGzQ4zu0HHZy3gBzJAFohPfPwg+P66X/aOtJFPqgfZTEEW/WqYzrhY78YZVctp+yB7WOepBBn7fpO7ymE/abJiyg6MRu4u2h+S2RE+Ex0X5m/lj9qmrfA7HEB6MkZkx2KxK7H7saE+Q=='
-                      autoCreateTopics: false                    
-                    bindings:
-                      hzin:
-                        consumer:
-                          autoCommitOnError: true
-                          startOffset: latest
-                          enableDlq: false
-                          dlqName: dmap_media_resend
-                          configuration:
-                            session.timeout.ms: 250000                            
+                            session.timeout.ms: 250000                             
 emar:
   bs:
     consumer:
@@ -110,40 +90,31 @@ spring:
       bindings:
         gdin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
-          contentType: text/plain        
           binder: kafkagd
           group: yz
+          contentType: text/plain
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 5          
+            maxAttempts: 5
         yzin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
-          contentType: text/plain        
           binder: kafkayz
           group: yz
+          contentType: text/plain
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 5          
+            maxAttempts: 5
         htin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
-          contentType: text/plain        
           binder: kafkaht
           group: yz
+          contentType: text/plain
           consumer:
             headerMode: raw
             concurrency: 2
-            maxAttempts: 5          
-        hzin:
-          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
-          contentType: text/plain        
-          binder: kafkahz  
-          group: yz
-          consumer:
-            headerMode: raw
-            concurrency: 2
-            maxAttempts: 5          
+            maxAttempts: 5
 server:
   port: ${port:19930}
 emar:
@@ -156,7 +127,7 @@ emar:
 spring:
   profiles: hz
   cloud:
-    stream:  
+    stream:
       bindings:
         gdin:
           destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
@@ -185,15 +156,6 @@ spring:
             headerMode: raw
             concurrency: 2
             maxAttempts: 5
-        hzin:
-          destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
-          binder: kafkahz
-          group: hz
-          contentType: text/plain
-          consumer:
-            headerMode: raw
-            concurrency: 2
-            maxAttempts: 5  
 server:
   port: ${port:19930}
 emar:
