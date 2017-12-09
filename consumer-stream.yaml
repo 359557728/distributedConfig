@@ -108,25 +108,36 @@ spring:
   cloud:
     stream:
       default:
-        destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend
-        contentType: text/plain
-        consumer:
-          headerMode: raw
-          concurrency: 2
-          maxAttempts: 5        
+        destination: 5010,5011,5050,5060,5120,5140,5040,5180,5210,5220,5230,5250,5020,5260,5270,5290,dmap_media_resend   
       bindings:
         gdin:
           binder: kafkagd
           group: yz
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5          
         yzin:
           binder: kafkayz
           group: yz
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5          
         htin:
           binder: kafkaht
           group: yz
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5          
         hzin:
           binder: kafkahz  
           group: yz
+          consumer:
+            headerMode: raw
+            concurrency: 2
+            maxAttempts: 5          
 server:
   port: ${port:19930}
 emar:
