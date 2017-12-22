@@ -24,18 +24,14 @@ server:
 spring:
   profiles: yz
 eureka:
-  instance:
-    hostname: 115.231.106.46
   client:
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+      defaultZone: http://115.231.106.46:8761/eureka/
 ---
 #亦庄Eureka实例
 spring:
   profiles: hz
 eureka:
-  instance:
-    hostname: 123.59.17.84
   client:
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/      
+      defaultZone: http://123.59.17.84:8761/eureka/      
