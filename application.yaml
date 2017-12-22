@@ -7,4 +7,6 @@ management:
 eureka:
   client:
     healthcheck:
-      enabled: true        
+      enabled: true
+    serviceUrl:
+      defaultZone: '{cipher}AQAZRVjsmRfqsVkJ/+7Br5IJ/wDPW3qgAjMKpv6gAheJF09g5IdRzEnCCfMhRmboUIPwlPRw2bRImtRpXfjAgHQzNgBId59onz4DEEPSWaeOs52upQEj1ZlLgqgmwiyI7WCNcxDW4IZsPAbeRW6cuf5/ChIaBrHut5Xdy/FRcPMtAJ/syWDPlx/Zy1sEqnlsexN0Q0R+3mzVTScHd/H3VEGE+wVXOi/2Tnl3sJ6o6koIw1rqLfarbhvUd3prtxi71rpc4j4FmtTZ3iKO9lvQyFkY1eDNlcfOXbg2+25kz+caL1//vgZIRcQN1DcapkqZNpZTL7gwuVpRxmTFrloWpFx+fN/OYffR56E9OBa68nlY48Q0NrgkYWn/wLXuzXjYEv5LVwxV2aPxpPRTstVjznksjRt9aWFakRY8rdlwH17LaRn2YSsoDaj/LOeNYX2azdW+u3P4vJqiFfURIBuoLH9X'      
