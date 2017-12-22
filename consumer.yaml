@@ -15,10 +15,6 @@ emar:
         key: media_mq
   log:
     format: dat
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: '{cipher}AQAZqayNZZBQGm+6XSlpRn85ESQxVxKokpoi43nvgns8ICrAWCOX4qE1uy38rCLt4JGxTmLmoBQ062HZIWSYlL8wyw7MdWHjDNvftJusByZuWk9KbSVcCVHwO9/DPJJYKUz55NhVp4lMof6xQIvgThSf/H+AcCRVH5Mb9L6vky9i9soUPkyx3BOpH9JWHs4E2Oj9lQK5dQ1pHqOJ0TxqT122sURCDaL9kaSaTtPY7MpbKLGuDjsRXETCu3OO6s0bVBDx6AF9GVRuDD5MGTw/Q9G7QUQyh9GX0yRI5FAco+40V50tlw9Rc70bUh+6t0Pq4Tg+kknrvi7Wa97aw1a0BDMz91MowmYQs7NybKq3yLsZCvjJKf65fskMG0jGkIblojkvI4J1AU2r8kjIqKhX9kGIs/Xej+FfeUzHhq6rGaT1Uw=='
 logging:
   level:
     com:
