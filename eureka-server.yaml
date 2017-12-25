@@ -26,7 +26,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://115.231.106.46:8761/eureka/
+      defaultZone: '{cipher}AQCwzSuDM0t3CmWBzOYQ0p4d3o5QdqF3a7paukrIvYLci++nvRykqNz4Ax/61iyVIH3R7IpnRmOGdwvMbpVwVGPRqVbxPlo1E88rmyQh60OUReDbeddfJPj2lQZOsvYf7yYR5m381BLMRJ+lWrKeyg6C7iqWh2gonMqxgV9EwzO7AkjJ9A8nF/VbFkhMHvsf8xJEiGLZe8gTTeTc7Sn5Snt+x80KuzQeYOAdtqUwwnpqOQ7RXCwxW185sC/sWBeKp072dV51mjfm/LfNJDhIK50BCCo9TQOXf1t2RHT/1ufvBo2Y4Eag2yX4igk3GAerymopT4BAJ/M01Q092Du5u1ojWFwhq+pIlXnfux8VoIbSaa/1ZRNaqInN8OuYvk6y2Yp19CKdz2jIYzbtNShVe9wykDJNC6rmher465F4cWSmzw=='
 ---
 #亦庄Eureka实例
 spring:
@@ -34,4 +34,4 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://123.59.17.84:8761/eureka/      
+      defaultZone: '{cipher}AQBQg9BIZHGKT38n4p1/ClWktFkxLs0uYWGyRGO42yZI2VlLbGMu93j40B9nhDoIe9fmoAIwULSJXI25sVGXGRbFx7xT3NzjbChVvfBR4MJR1u1w9u8pyGFuM935F57XN4E4RbLuT0Bi5jVlcEqCf3iVWQ8Wt2EHmabL++K7NTFqCy8RualMWNy+XK1rVJ2oYVObE9a0vWfHMJcs8hheLeaW5PDUqJBqhxNo/nOWZkXwumrXkKINAD9dcxYdX/r4qIdnvDivYl+Ggxr32tyPcKbNFOgKm3khnVGZ6wp6QLEL7zPzEsgOXef8fghyeOMWfnwPf9WoacYUli7Nitbyzal3CiSyKs9XwvhfVqU4dB22OzhoqWylakMTHbAotnFVXlEL1qW+dU5lP7SMB+N9/r75eXZNeeIBOs/iPd1ukXY9aQ=='      
