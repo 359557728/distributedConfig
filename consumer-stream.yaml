@@ -1,10 +1,5 @@
 spring:
   cloud:
-    config:
-      discovery:
-        enabled: true
-        serviceId: configServer
-      name: consumer-stream
     stream:            
       binders:
         kafkagd:
