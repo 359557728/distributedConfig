@@ -3,7 +3,7 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 10
     lease-expiration-duration-in-seconds: 30
-    prefer-ip-address: true
+    preferIpAddress: true
   client:
     fetch-registry: true
     register-with-eureka: true
@@ -25,7 +25,7 @@ spring:
   profiles: yz
 eureka:
   instance:
-    hostname: '{cipher}AQB43hPrcPfUXTRby4kpQSyC+ShhIz56VfL14aQCO2YYXiDGTjq3ciq21ASpjBzgXqiCXVI18dBnFaA02kngp8e2vdIc8xUxsr61N2CACLEvu49KVD5j1Wyh3yfUF1QToSao0cflB+yZDvjZmo8tzNx/mAwvU4pZQLB7jJXMwYMglTPcgxzONLMDVwmRgRUh1/+NrQoWAPLbvKOHdQUaOCZomhHhnYOh1XyvEp0He9jSLf4boXkuetSPxicY5Q7SrF0z/rqqtq2kon35vTqlP/oVyPtqqAgdoyW0+uuk94BUcVf0GrvT71qB+Wcf5n8Vm3Wv70AaTo8ieOby4iwrs2tD/nuFFHtdxw3QHb+Po8BhR/bBr4vmtRMmyHZIxuZH02c='
+    ipAddress: '{cipher}AQB43hPrcPfUXTRby4kpQSyC+ShhIz56VfL14aQCO2YYXiDGTjq3ciq21ASpjBzgXqiCXVI18dBnFaA02kngp8e2vdIc8xUxsr61N2CACLEvu49KVD5j1Wyh3yfUF1QToSao0cflB+yZDvjZmo8tzNx/mAwvU4pZQLB7jJXMwYMglTPcgxzONLMDVwmRgRUh1/+NrQoWAPLbvKOHdQUaOCZomhHhnYOh1XyvEp0He9jSLf4boXkuetSPxicY5Q7SrF0z/rqqtq2kon35vTqlP/oVyPtqqAgdoyW0+uuk94BUcVf0GrvT71qB+Wcf5n8Vm3Wv70AaTo8ieOby4iwrs2tD/nuFFHtdxw3QHb+Po8BhR/bBr4vmtRMmyHZIxuZH02c='
     instanceId: '{cipher}AQCed36OQhmf7pkFh3KXFcQFgUFruxEm++c4R0k0O5J4I+BXxPj71YHj6PGSczyxaRC4y+w5Au1oxO0cCeOR401gR6fMNFDyc5bJNUjx/nHoky0m+hGCIef9OjZtAJAncPZVVrl7b+02TlZn/dyraiZdu/PC+pkt44BRfj5oFqJgOQt5F/bdBe0B7ULqgvFONybeLa5swoxE1g83gfH6oowC/64cmLpTMKX09DfiuNZssRvoooJ0uXcD7Fhyq6vjnmCVNTpzfJAeS08mxIOP4IQt0Dk+Zr5I7nH5MuXwWoUNgJo6etw++R9/1xjAO7OUcTxeclkckzAcGDHyIAsUaHhQk1ch8dAC9fjcjFhjySWxbR21lWV9xjl3LD1704n2QFnU8BdG2IdyB6iko+6JT0Yt'
   client:
     serviceUrl:
@@ -36,7 +36,7 @@ spring:
   profiles: hz
 eureka:
   instance:
-    hostname: '{cipher}AQBVoi5YoxyZwdhuC1N3NOXKaH56sV3AM48Bcopfh7RrRjte4BBGWC/eNdlBvV83SAqpHn9uMXE0A595cy+pgBBrN37N5LcYuOoqcASBUeBCrsiuinMowM2H7KR9Hv0xCzmRyjhHW6OkzotzLhsmkzskRDG8dBs5PHFAQqQ6Tq6QMKnFYDiJQBeNql9jW6tUuSS0I27GxgwoNbIq3doLx8KXTvr/Qoi7L8DgrtDTVxpNG3zou0nzsoP0wNs6N1DzgE8KHwqzSCo8O7VoEbCGI+aTKRCsP6lmRUIb5az90WhFV9L6MsUp9ZW04d1RibzHU4P1He3GZGoXpfouoUX+ssXvqwVH6ravwwwBpRfmHC+L6ZtMkYUVsjvu9gBuLf46oFg='
+    ipAddress: '{cipher}AQBVoi5YoxyZwdhuC1N3NOXKaH56sV3AM48Bcopfh7RrRjte4BBGWC/eNdlBvV83SAqpHn9uMXE0A595cy+pgBBrN37N5LcYuOoqcASBUeBCrsiuinMowM2H7KR9Hv0xCzmRyjhHW6OkzotzLhsmkzskRDG8dBs5PHFAQqQ6Tq6QMKnFYDiJQBeNql9jW6tUuSS0I27GxgwoNbIq3doLx8KXTvr/Qoi7L8DgrtDTVxpNG3zou0nzsoP0wNs6N1DzgE8KHwqzSCo8O7VoEbCGI+aTKRCsP6lmRUIb5az90WhFV9L6MsUp9ZW04d1RibzHU4P1He3GZGoXpfouoUX+ssXvqwVH6ravwwwBpRfmHC+L6ZtMkYUVsjvu9gBuLf46oFg='
     instanceId: '{cipher}AQAUESNTLQMsGp1LUOrau+KcWqFl4Ljo83DUahWugfzLaBYuY4SMp3cn/yVAMmnxlVS4uhxQkaO5GPAoYpzUpi5yfvOVfhmoUCpcnBWPGKWvhryIzN0E3nLr4cxliDVRW2pEYXxufulYzMxkqSeqeqot9q7AGJgwzCWyPqFUs++TeWsq9LAgeeBUU18EaH/xalPk1hj02ErmxqyHguXVViJX69ogM0EB734+Zo/bLl+kNng4U/N+hj0Fj6l+jsDyipC6cXBj2tLgYd3O4tFNGDhBNJYl9MC6ksgiTNmiyniSBtwBPWm0dmQzCrRpLXVEGDoBWqzVuFGa1z+6wdKQNUUagBE/FsguVocZbKM7PXPMm4dGIQ6Yco1HmsMd1ceAt/4JKWYsLnPZPV2PHif0soLhYtWzyVKsQyuOwQKyM4fbuw=='
   client:
     serviceUrl:
